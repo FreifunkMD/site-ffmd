@@ -11,6 +11,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-next-node \
 	gluon-mesh-batman-adv \
 	gluon-mesh-vpn-fastd \
+	gluon-ffmautokey \
 	gluon-radvd \
 	gluon-status-page \
 	iwinfo \
