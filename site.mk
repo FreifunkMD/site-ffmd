@@ -1,5 +1,7 @@
 GLUON_SITE_PACKAGES := \
+	gluon-mesh-batman-adv-14 \
 	gluon-alfred \
+	gluon-announced \
 	gluon-autoupdater \
 	gluon-config-mode \
 	gluon-ebtables-filter-multicast \
@@ -8,7 +10,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-admin \
 	gluon-luci-autoupdater \
 	gluon-next-node \
-	gluon-mesh-batman-adv \
 	gluon-mesh-vpn-fastd \
 	gluon-ffmautokey \
 	gluon-radvd \
