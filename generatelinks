@@ -1,6 +1,6 @@
 #!/bin/bash
 # this script takes two parameters: the full version to be used and the branch
-
+set -ix
 branch=$2
 version=$1
 #if the branch is "dev" then the files are expected to be in /var/www/files_ffm/ffm/firmware/dev/factory
