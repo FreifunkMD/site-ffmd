@@ -50,6 +50,7 @@ Gluon versions used for specific Freifunk Magdeburg Firmware builds
 
 * 0.29: *gluon 2014.3*
   * see http://gluon.readthedocs.org/en/latest/releases/v2014.3.html
+  * fix #31 (autoupdate per default anschalten)
 * 0.28: *gluon 2014.2*
   * **note** first version with specific gluon version, previous were
     simply built from arbitrary master states
