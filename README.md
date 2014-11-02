@@ -48,6 +48,9 @@ Verify a successful upgrade by
 Gluon versions used for specific Freifunk Magdeburg Firmware builds
 -------------------------------------------------------------------
 
+* 0.30: *gluon 2014.3.1*
+  * see http://gluon.readthedocs.org/en/latest/releases/v2014.3.1.html
+  * enable mesh VPN by default
 * 0.29: *gluon 2014.3*
   * see http://gluon.readthedocs.org/en/latest/releases/v2014.3.html
   * fix #31 (autoupdate per default anschalten)
