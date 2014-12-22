@@ -26,7 +26,6 @@ GLUON_SITE_PACKAGES := \
 	collectd-mod-load \
 	collectd-mod-cpu \
 	collectd-mod-memory \
-	collectd-mod-wireless \
 	collectd-mod-network \
 	collectd-mod-iwinfo \
 	iwinfo \
