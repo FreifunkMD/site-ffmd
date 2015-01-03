@@ -23,6 +23,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	gluon-next-node \
+	gluon-neighbour-info \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-status-page \
@@ -30,7 +31,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	haveged
 
-DEFAULT_GLUON_CHECKOUT := v2014.3.1
+DEFAULT_GLUON_CHECKOUT := v2014.4
 # Allow overriding the checkout from the command line
 GLUON_CHECKOUT ?= $(DEFAULT_GLUON_CHECKOUT)
 
