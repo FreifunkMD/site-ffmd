@@ -1,0 +1,39 @@
+#!/bin/bash
+
+branch=$1
+pattern=(  )
+
+echo "Hast Du wirklich die folgenden Routermodelle getestet?"
+for i in ${pattern[@]}
+do
+  echo "* $i"
+done
+echo "y/N"
+read answer
+if [[ $answer == "y" ]]
+then
+
+for i in ${pattern[@]}
+do
+# 1. get all images from to-sign-webspace (Modelle einschränken!)
+  cat /home/christof/Projekte/Freifunk/Keys|ecdsasign "$i" >>manifest.$branch
+# 2. sign all images
+# 3. upload all images to webspace
+done
+
+else
+echo cancelling
+exit 1
+fi
+
+
+#Tests für Testbot:
+#1. Funktioniert das mesh auf dem wlan-interface und kann man damit
+#   meshen?
+#2. Funktioniert die Nutzung des Geräts als client (Internetzugang,
+#   Zugang zu Freifunk-IP)
+#
+#Vorgehen beim Update:
+#* stable firmware draufflashen
+#* telnet-pw setzen
+#* test-fw draufflashen, tests durchführen
