@@ -51,6 +51,7 @@ Gluon versions used for specific Freifunk Magdeburg Firmware builds
 * 0.31: *gluon 2014.4*
   * see http://gluon.readthedocs.org/en/latest/releases/v2014.4.html
   * enabled `gluon-neighbour-info`
+  * make IPv6 connections to gateways possible and add optional addresses
 * 0.30: *gluon 2014.3.1*
   * see http://gluon.readthedocs.org/en/latest/releases/v2014.3.1.html
   * enable mesh VPN by default
