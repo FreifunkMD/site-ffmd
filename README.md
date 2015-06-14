@@ -53,6 +53,7 @@ Gluon versions used for specific Freifunk Magdeburg Firmware builds
   * enabled `gluon-neighbour-info`
   * make IPv6 connections to gateways possible and add optional addresses
   * changed fastd auth method from gmac to umac
+  * allow to configure a private WLAN which is bridged with the WAN uplink
 * 0.30: *gluon 2014.3.1*
   * see http://gluon.readthedocs.org/en/latest/releases/v2014.3.1.html
   * enable mesh VPN by default
