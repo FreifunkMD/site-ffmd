@@ -17,21 +17,21 @@ GLUON_SITE_PACKAGES := \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-luci-switchconfig \
-	gluon-ffmautokey \
 	gluon-radvd \
 	gluon-status-page \
 	iwinfo \
 	iptables \
 	gluon-ffmcollectdconfig \
 	haveged \
-	collectd5 \
-	collectd-mod-ping \
-	collectd-mod-interface \
-	collectd-mod-cpu \
-	collectd-mod-network \
-	collectd-mod-iwinfo \
-	collectd-mod-load \
-	collectd-mod-memory \
+#	collectd5 \
+#	collectd-mod-ping \
+#	collectd-mod-interface \
+#	collectd-mod-cpu \
+#	collectd-mod-network \
+#	collectd-mod-iwinfo \
+#	collectd-mod-load \
+#	collectd-mod-memory \
+#	gluon-ffmautokey \
 
 
 DEFAULT_GLUON_RELEASE := 0.4.2+0-exp$(shell date '+%Y%m%d')
