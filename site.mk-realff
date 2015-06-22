@@ -21,8 +21,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	iwinfo \
 	iptables \
-	gluon-ffmcollectdconfig \
 	haveged \
+#	gluon-ffmcollectdconfig \
 #	collectd5 \
 #	collectd-mod-ping \
 #	collectd-mod-interface \
