@@ -71,20 +71,43 @@ export GLUON_BRANCH GLUON_PRIORITY
 # get GLUON_CHECKOUT from site dir
 pushd ${SCRIPTDIR}
 eval `make -s -f helper.mk`
-echo "GLUON_CHECKOUT: ${GLUON_CHECKOUT}"
+echo -e "GLUON_CHECKOUT: \033[32m${GLUON_CHECKOUT}\033[0m"
+echo -e "GLUON_BRANCH: \033[32m${GLUON_BRANCH}\033[0m"
+echo -e "GLUON_RELEASE: \033[32m${GLUON_RELEASE}\033[0m"
+sleep 5
 
 # build
 pushd ..
-make clean $VERBOSE
+
+TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
+
+for target in ${TARGETS}
+do
+    make clean GLUON_TARGET=${target} $VERBOSE
+done
+
 git checkout master
 git pull
 git checkout ${GLUON_CHECKOUT}
-make clean $VERBOSE
+
+for target in ${TARGETS}
+do
+    make clean GLUON_TARGET=${target} $VERBOSE
+done
+
 make update $VERBOSE
-make -j4 $VERBOSE
+
+for target in ${TARGETS}
+do
+    make GLUON_TARGET=${target} -j4 $VERBOSE
+done
+
 make manifest $VERBOSE
+
+# ..
 popd
 
+# ${SCRIPTDIR}
 popd
 
 exit 0
