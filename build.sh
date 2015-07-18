@@ -51,9 +51,11 @@ fi
 
 case "xx$GLUON_BRANCH" in
     'xxstable')
-        GLUON_PRIORITY=14
+        # one week
+        GLUON_PRIORITY=7
         ;;
     'xxbeta')
+        # three days
         GLUON_PRIORITY=3
         ;;
     'xxexperimental')
