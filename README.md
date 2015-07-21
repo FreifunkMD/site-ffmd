@@ -28,7 +28,7 @@ you can call
 
     ./site/build.sh -v
 
-*Note* since gluon 2015.1 builds for multiple targets now you need at least 35 GB of free space!
+**Note** since gluon 2015.1 builds for multiple targets. Now you need at least 35 GB of free space!
 
 Updating your node via ssh
 --------------------------------------------
