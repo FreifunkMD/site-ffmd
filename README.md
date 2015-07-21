@@ -28,6 +28,8 @@ you can call
 
     ./site/build.sh -v
 
+*Note* since gluon 2015.1 builds for multiple targets now you need at least 35 GB of free space!
+
 Updating your node via ssh
 --------------------------------------------
 If possible, use the [Config Mode](http://gluon.readthedocs.org/en/latest/features/configmode.html) to update your node.
@@ -48,6 +50,8 @@ Verify a successful upgrade by
 Gluon versions used for specific Freifunk Magdeburg Firmware builds
 -------------------------------------------------------------------
 
+* 0.32: *gluon 2015.1.1*
+  * see http://gluon.readthedocs.org/en/latest/releases/v2015.1.1.html
 * 0.31: *gluon 2014.4*
   * see http://gluon.readthedocs.org/en/latest/releases/v2014.4.html
   * enabled `gluon-neighbour-info`
