@@ -38,7 +38,17 @@ DEFAULT_GLUON_CHECKOUT := v2015.1.1
 # Allow overriding the checkout from the command line
 GLUON_CHECKOUT ?= $(DEFAULT_GLUON_CHECKOUT)
 
-DEFAULT_GLUON_RELEASE := $(shell git --git-dir=$(this_dir)/.git --work-tree=$(this_dir) describe --tags --always --dirty --match "v*" | sed 's/^v//')
+# replace magic in version number as follows:
+# v0.31-4-gf390c9d				--> 0.31+4-gf390c9d
+# v0.32-beta.1 					--> 0.32~beta.1
+# v0.30-beta.1-2-g11c8a08-dirty	--> 0.30~beta.1+2-g11c8a08-dirty
+DEFAULT_GLUON_RELEASE := $(shell git --git-dir=$(this_dir)/.git \
+		--work-tree=$(this_dir) describe --tags --always --dirty \
+		--match "v*" \
+		| sed -e 's/^\(v[^-]\+\)-\([0-9]\+-g[0-9a-f]\{7\}.*\)$$/\1+\2/' \
+		| sed -e 's/^\(v[^-]\+\)-\(beta.*\)$$/\1~\2/' \
+		| sed -e 's/^\(v[^~]\+~beta[^-]\+\)-\([0-9]\+-g[0-9a-f]\{7\}.*\)$$/\1+\2/' \
+		| sed -e 's/^v//')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
