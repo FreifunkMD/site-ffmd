@@ -39,9 +39,9 @@ DEFAULT_GLUON_CHECKOUT := v2015.1.1
 GLUON_CHECKOUT ?= $(DEFAULT_GLUON_CHECKOUT)
 
 # replace magic in version number as follows:
-# v0.31-4-gf390c9d				--> v0.31+4-gf390c9d
-# v0.32-beta.1 					--> v0.32~beta.1
-# v0.32~beta.1-2-f00b445-dirty	--> v0.32~beta.1+2-f00b445-dirty
+# v0.31-4-gf390c9d				--> 0.31+4-gf390c9d
+# v0.32-beta.1 					--> 0.32~beta.1
+# v0.30-beta.1-2-g11c8a08-dirty	--> 0.30~beta.1+2-g11c8a08-dirty
 DEFAULT_GLUON_RELEASE := $(shell git --git-dir=$(this_dir)/.git \
 		--work-tree=$(this_dir) describe --tags --always --dirty \
 		--match "v*" \
