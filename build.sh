@@ -76,13 +76,22 @@ eval `make -s -f helper.mk`
 echo -e "GLUON_CHECKOUT: \033[32m${GLUON_CHECKOUT}\033[0m"
 echo -e "GLUON_BRANCH: \033[32m${GLUON_BRANCH}\033[0m"
 echo -e "GLUON_RELEASE: \033[32m${GLUON_RELEASE}\033[0m"
-sleep 5
+
+# wait five seconds to give user time to read the things above
+for i in $(seq 5)
+do
+    sleep 1
+    echo -n '.'
+done
+sleep 1
+echo
 
 # build
 pushd ..
 
 TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
 
+echo -e "\033[32mpreparing gluon build ...\033[0m"
 for target in ${TARGETS}
 do
     make clean GLUON_TARGET=${target} $VERBOSE
@@ -101,9 +110,11 @@ make update $VERBOSE
 
 for target in ${TARGETS}
 do
+    echo -e "starting to build target \033[32m${target}\033[0m ..."
     make GLUON_TARGET=${target} -j4 $VERBOSE
 done
 
+echo -e "\033[32mmaking manifest ...\033[0m"
 make manifest $VERBOSE
 
 # ..
