@@ -97,9 +97,10 @@ then
     rm -vrf images/factory images/sysupgrade
 fi
 
+OLD_OPENWRT_RELEASE=$(grep 'RELEASE:=' include/toplevel.mk | sed -e 's/RELEASE:=//')
 OLD_TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
 
-echo -e "\033[32mpreparing gluon build ...\033[0m"
+echo -e "\033[32mPreparing gluon build ...\033[0m"
 for target in ${OLD_TARGETS}
 do
     make clean GLUON_TARGET=${target} $VERBOSE
@@ -117,13 +118,30 @@ done
 
 make update $VERBOSE
 
+# OpenWRT release branch check
+NEW_OPENWRT_RELEASE=$(grep 'RELEASE:=' include/toplevel.mk | sed -e 's/RELEASE:=//')
+if [ "${OLD_OPENWRT_RELEASE}" != "${NEW_OPENWRT_RELEASE}" ]
+then
+    echo '----'
+    echo -e "Previous OpenWRT release checkout:\t${OLD_OPENWRT_RELEASE}"
+    echo -e "Current OpenWRT release checkout:\t${NEW_OPENWRT_RELEASE}"
+    echo -e "\033[40;93mOpenWRT releases differ. Recommended to rebuild toolchains!\033[0m"
+    echo -n 'Clean the entire tree? (y/N) '
+    read ANSWER
+    if [ "${ANSWER}" = 'y' ]
+    then
+        make dirclean
+    fi
+fi
+echo -e "OpenWRT release branch: \033[32m${NEW_OPENWRT_RELEASE}\033[0m"
+
 for target in ${NEW_TARGETS}
 do
-    echo -e "starting to build target \033[32m${target}\033[0m ..."
+    echo -e "Starting to build target \033[32m${target}\033[0m ..."
     make GLUON_TARGET=${target} -j4 $VERBOSE
 done
 
-echo -e "\033[32mmaking manifest ...\033[0m"
+echo -e "\033[32mMaking manifest ...\033[0m"
 make manifest $VERBOSE
 
 # ..
