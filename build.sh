@@ -13,10 +13,12 @@ print_usage() {
     echo 'Options:'
     echo '  -h  show this help'
     echo '  -v  verbose mode'
+    echo '  -y  answer all questions with yes'
 }
 
 # command line options handling
-ARGS=`getopt hv $*`
+ALLYES='false'
+ARGS=$(getopt hvy $*)
 if [ $? -ne 0 ]
 then
     print_usage
@@ -33,6 +35,10 @@ do
             ;;
         -v)
             VERBOSE='V=s'
+            shift
+            ;;
+        -y)
+            ALLYES='true'
             shift
             ;;
         --)
@@ -72,13 +78,13 @@ export GLUON_BRANCH GLUON_PRIORITY
 
 # get GLUON_CHECKOUT from site dir
 pushd ${SCRIPTDIR}
-eval `make -s -f helper.mk`
+eval $(make -s -f helper.mk)
 echo -e "GLUON_CHECKOUT: \033[32m${GLUON_CHECKOUT}\033[0m"
 echo -e "GLUON_BRANCH: \033[32m${GLUON_BRANCH}\033[0m"
 echo -e "GLUON_RELEASE: \033[32m${GLUON_RELEASE}\033[0m"
 
 # wait five seconds to give user time to read the things above
-for i in $(seq 5)
+for i in $(seq 3)
 do
     sleep 1
     echo -n '.'
@@ -86,13 +92,30 @@ done
 sleep 1
 echo
 
-# build
+# goto gluon dir
 pushd ..
 
-TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
+# ask if old images should be removed
+echo -n 'Cleanup old image directory? (y/N) '
+if [ "${ALLYES}" = 'true' ]
+then
+    ANSWER='y'
+    echo ${ANSWER}
+else
+    read ANSWER
+fi
+if [ "${ANSWER}" = 'y' ]
+then
+    rm -vrf images/factory images/sysupgrade
+fi
 
-echo -e "\033[32mpreparing gluon build ...\033[0m"
-for target in ${TARGETS}
+# gather some information about current build tree before clean
+OLD_OPENWRT_RELEASE=$(grep 'RELEASE:=' include/toplevel.mk | sed -e 's/RELEASE:=//')
+OLD_TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
+
+# prepare gluon tree
+echo -e "\033[32mPreparing gluon build ...\033[0m"
+for target in ${OLD_TARGETS}
 do
     make clean GLUON_TARGET=${target} $VERBOSE
 done
@@ -101,20 +124,46 @@ git checkout master
 git pull
 git checkout ${GLUON_CHECKOUT}
 
-for target in ${TARGETS}
+NEW_TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
+for target in ${NEW_TARGETS}
 do
     make clean GLUON_TARGET=${target} $VERBOSE
 done
 
 make update $VERBOSE
 
-for target in ${TARGETS}
+# check OpenWRT release branch
+NEW_OPENWRT_RELEASE=$(grep 'RELEASE:=' include/toplevel.mk | sed -e 's/RELEASE:=//')
+if [ "${OLD_OPENWRT_RELEASE}" != "${NEW_OPENWRT_RELEASE}" ]
+then
+    echo '----'
+    echo -e "Previous OpenWRT release checkout:\t${OLD_OPENWRT_RELEASE}"
+    echo -e "Current OpenWRT release checkout:\t${NEW_OPENWRT_RELEASE}"
+    echo -e "\033[40;93mOpenWRT releases differ. Recommended to rebuild toolchains!\033[0m"
+    echo -n 'Clean the entire tree? (y/N) '
+    if [ "${ALLYES}" = 'true' ]
+    then
+        ANSWER='y'
+        echo ${ANSWER}
+    else
+        read ANSWER
+    fi
+    if [ "${ANSWER}" = 'y' ]
+    then
+        make dirclean
+    fi
+fi
+echo -e "OpenWRT release branch: \033[32m${NEW_OPENWRT_RELEASE}\033[0m"
+
+# loop through all targets and build them
+for target in ${NEW_TARGETS}
 do
-    echo -e "starting to build target \033[32m${target}\033[0m ..."
+    echo -e "Starting to build target \033[32m${target}\033[0m ..."
     make GLUON_TARGET=${target} -j4 $VERBOSE
 done
 
-echo -e "\033[32mmaking manifest ...\033[0m"
+# finalize
+echo -e "\033[32mMaking manifest ...\033[0m"
 make manifest $VERBOSE
 
 # ..
