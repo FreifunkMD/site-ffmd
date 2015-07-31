@@ -78,7 +78,7 @@ export GLUON_BRANCH GLUON_PRIORITY
 
 # get GLUON_CHECKOUT from site dir
 pushd ${SCRIPTDIR}
-eval `make -s -f helper.mk`
+eval $(make -s -f helper.mk)
 echo -e "GLUON_CHECKOUT: \033[32m${GLUON_CHECKOUT}\033[0m"
 echo -e "GLUON_BRANCH: \033[32m${GLUON_BRANCH}\033[0m"
 echo -e "GLUON_RELEASE: \033[32m${GLUON_RELEASE}\033[0m"
@@ -92,7 +92,7 @@ done
 sleep 1
 echo
 
-# build
+# goto gluon dir
 pushd ..
 
 # ask if old images should be removed
@@ -109,9 +109,11 @@ then
     rm -vrf images/factory images/sysupgrade
 fi
 
+# gather some information about current build tree before clean
 OLD_OPENWRT_RELEASE=$(grep 'RELEASE:=' include/toplevel.mk | sed -e 's/RELEASE:=//')
 OLD_TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
 
+# prepare gluon tree
 echo -e "\033[32mPreparing gluon build ...\033[0m"
 for target in ${OLD_TARGETS}
 do
@@ -130,7 +132,7 @@ done
 
 make update $VERBOSE
 
-# OpenWRT release branch check
+# check OpenWRT release branch
 NEW_OPENWRT_RELEASE=$(grep 'RELEASE:=' include/toplevel.mk | sed -e 's/RELEASE:=//')
 if [ "${OLD_OPENWRT_RELEASE}" != "${NEW_OPENWRT_RELEASE}" ]
 then
@@ -153,12 +155,14 @@ then
 fi
 echo -e "OpenWRT release branch: \033[32m${NEW_OPENWRT_RELEASE}\033[0m"
 
+# loop through all targets and build them
 for target in ${NEW_TARGETS}
 do
     echo -e "Starting to build target \033[32m${target}\033[0m ..."
     make GLUON_TARGET=${target} -j4 $VERBOSE
 done
 
+# finalize
 echo -e "\033[32mMaking manifest ...\033[0m"
 make manifest $VERBOSE
 
