@@ -13,10 +13,12 @@ print_usage() {
     echo 'Options:'
     echo '  -h  show this help'
     echo '  -v  verbose mode'
+    echo '  -y  answer all questions with yes'
 }
 
 # command line options handling
-ARGS=`getopt hv $*`
+ALLYES='false'
+ARGS=$(getopt hvy $*)
 if [ $? -ne 0 ]
 then
     print_usage
@@ -33,6 +35,10 @@ do
             ;;
         -v)
             VERBOSE='V=s'
+            shift
+            ;;
+        -y)
+            ALLYES='true'
             shift
             ;;
         --)
@@ -91,7 +97,13 @@ pushd ..
 
 # ask if old images should be removed
 echo -n 'Cleanup old image directory? (y/N) '
-read ANSWER
+if [ "${ALLYES}" = 'true' ]
+then
+    ANSWER='y'
+    echo ${ANSWER}
+else
+    read ANSWER
+fi
 if [ "${ANSWER}" = 'y' ]
 then
     rm -vrf images/factory images/sysupgrade
@@ -127,7 +139,13 @@ then
     echo -e "Current OpenWRT release checkout:\t${NEW_OPENWRT_RELEASE}"
     echo -e "\033[40;93mOpenWRT releases differ. Recommended to rebuild toolchains!\033[0m"
     echo -n 'Clean the entire tree? (y/N) '
-    read ANSWER
+    if [ "${ALLYES}" = 'true' ]
+    then
+        ANSWER='y'
+        echo ${ANSWER}
+    else
+        read ANSWER
+    fi
     if [ "${ANSWER}" = 'y' ]
     then
         make dirclean
