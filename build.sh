@@ -89,10 +89,10 @@ echo
 # build
 pushd ..
 
-TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
+OLD_TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
 
 echo -e "\033[32mpreparing gluon build ...\033[0m"
-for target in ${TARGETS}
+for target in ${OLD_TARGETS}
 do
     make clean GLUON_TARGET=${target} $VERBOSE
 done
@@ -101,14 +101,15 @@ git checkout master
 git pull
 git checkout ${GLUON_CHECKOUT}
 
-for target in ${TARGETS}
+NEW_TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
+for target in ${NEW_TARGETS}
 do
     make clean GLUON_TARGET=${target} $VERBOSE
 done
 
 make update $VERBOSE
 
-for target in ${TARGETS}
+for target in ${NEW_TARGETS}
 do
     echo -e "starting to build target \033[32m${target}\033[0m ..."
     make GLUON_TARGET=${target} -j4 $VERBOSE
