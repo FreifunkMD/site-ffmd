@@ -83,7 +83,7 @@ echo -e "GLUON_CHECKOUT: \033[32m${GLUON_CHECKOUT}\033[0m"
 echo -e "GLUON_BRANCH: \033[32m${GLUON_BRANCH}\033[0m"
 echo -e "GLUON_RELEASE: \033[32m${GLUON_RELEASE}\033[0m"
 
-# wait five seconds to give user time to read the things above
+# wait to give user time to read the things above
 for i in $(seq 3)
 do
     sleep 1
