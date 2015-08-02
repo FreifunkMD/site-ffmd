@@ -34,7 +34,9 @@ Updating your node via ssh
 --------------------------------------------
 If possible, use the [Config Mode](http://gluon.readthedocs.org/en/latest/features/configmode.html) to update your node.
 
-In case you do not have physical access to your router, an update can be performed using SSH. Connect to your device via IPv6 and issue the following commands, using the firmware file that matches your device:
+In case you do not have physical access to your router, an update can be performed using SSH. You can set a password or a SSH public key in config mode and should do this before you make it physically unaccesible.
+
+For the update connect to your device via IPv6 and issue the following commands, using the firmware file that matches your device:
 
     cd /tmp 
     wget http://firmware.md.freifunk.net/stable/LATEST/sysupgrade/gluon-ffmd-0.28-tp-link-tl-wr841n-nd-v9-sysupgrade.bin 
@@ -42,6 +44,10 @@ In case you do not have physical access to your router, an update can be perform
     sysupgrade gluon-ffmd-0.28-tp-link-tl-wr841n-nd-v9-sysupgrade.bin
 
 Be sure you know what you are doing!
+
+You can also trigger the automatic update via ssh, just call this (or add -f for forced auto update):
+
+    autoupdater
 
 Verify a successful upgrade by
 * checking that the node is back up and running (i.e. visible in the nodes list)
@@ -52,6 +58,9 @@ Gluon versions used for specific Freifunk Magdeburg Firmware builds
 
 * 0.32: *gluon 2015.1.1*
   * see http://gluon.readthedocs.org/en/latest/releases/v2015.1.1.html
+  * reduced stable branch update priority from two weeks to one
+  * enhanced version scheme for beta and experimental versions
+  * improved Freifunk Magdeburg build script
 * 0.31: *gluon 2014.4*
   * see http://gluon.readthedocs.org/en/latest/releases/v2014.4.html
   * enabled `gluon-neighbour-info`
