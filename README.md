@@ -58,6 +58,9 @@ Gluon versions used for specific Freifunk Magdeburg Firmware builds
 
 * 0.32: *gluon 2015.1.1*
   * see http://gluon.readthedocs.org/en/latest/releases/v2015.1.1.html
+  * reduced stable branch update priority from two weeks to one
+  * enhanced version scheme for beta and experimental versions
+  * improved Freifunk Magdeburg build script
 * 0.31: *gluon 2014.4*
   * see http://gluon.readthedocs.org/en/latest/releases/v2014.4.html
   * enabled `gluon-neighbour-info`
