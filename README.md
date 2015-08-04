@@ -1,21 +1,18 @@
-Freifunk-Magdeburg-specific Gluon configuration
-===============================================
+Freifunk Magdeburg Firmware
+===========================
 
-How to build the Freifunk Magdeburg Firmware
---------------------------------------------
+How To Build
+------------
 
-This is building FFMD firmware in a nutshell. For more on options or
-building specific branches please refer to the build script or [the official
-Gluon repository](https://github.com/freifunk-gluon/gluon) at GitHub.
+This is building FFMD firmware in a nutshell. For more on options or building specific branches please refer to the build script, [the official Gluon repository](https://github.com/freifunk-gluon/gluon) at GitHub, or [the official Gluon documentation](https://gluon.readthedocs.org/).
 
-The building requires packages for subversion, ncurses headers 
-(libncurses-dev) and zlib headers (libz-dev).
+To compile the firmware you need a working build environment and packages for git, subversion, gawk, unzip, ncurses headers and zlib headers.
 
-With Debian Linux, install by:
+On Debian GNU/Linux, install like this:
 
-    sudo aptitude install subversion libz-dev libncurses5-dev
+    sudo aptitude install git subversion build-essential gawk unzip libz-dev libncurses-dev
 
-then download and build as follows:
+Then download and build as follows:
 
     git clone git://github.com/freifunk-gluon/gluon.git         # Get the official Gluon repository
     cd gluon
@@ -30,8 +27,9 @@ you can call
 
 **Note** since gluon 2015.1 builds for multiple targets. Now you need at least 35 GB of free space!
 
-Updating your node via ssh
---------------------------------------------
+Updating via SSH
+----------------
+
 If possible, use the [Config Mode](http://gluon.readthedocs.org/en/latest/features/configmode.html) to update your node.
 
 In case you do not have physical access to your router, an update can be performed using SSH. You can set a password or a SSH public key in config mode and should do this before you make it physically unaccesible.
@@ -53,8 +51,8 @@ Verify a successful upgrade by
 * checking that the node is back up and running (i.e. visible in the nodes list)
 * checking that the host name and your login data are still available. A failed sysupgrade may leave the node in a state of running Freifunk with a weird configuration.
 
-Gluon versions used for specific Freifunk Magdeburg Firmware builds
--------------------------------------------------------------------
+Changelog
+---------
 
 * 0.32: *gluon 2015.1.1*
   * see http://gluon.readthedocs.org/en/latest/releases/v2015.1.1.html
