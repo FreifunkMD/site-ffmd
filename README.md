@@ -55,7 +55,7 @@ Changelog
 ---------
 
 * 0.32: *gluon 2015.1.1*
-  * see http://gluon.readthedocs.org/en/latest/releases/v2015.1.1.html
+  * see https://gluon.readthedocs.org/en/latest/releases/v2015.1.html and http://gluon.readthedocs.org/en/latest/releases/v2015.1.1.html
   * reduced stable branch update priority from two weeks to one
   * enhanced version scheme for beta and experimental versions
   * improved Freifunk Magdeburg build script
