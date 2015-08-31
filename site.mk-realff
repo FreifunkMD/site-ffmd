@@ -17,14 +17,14 @@ GLUON_SITE_PACKAGES := \
 	gluon-next-node \
 	gluon-luci-mesh-vpn-fastd \
 	gluon-mesh-vpn-fastd \
-	gluon-luci-switchconfig \
 	gluon-radvd \
 	gluon-status-page \
 	gluon-setup-mode \
 	gluon-config-mode-core \
 	iwinfo \
 	iptables \
-	haveged \
+	haveged 
+#	gluon-luci-switchconfig \
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
 #	collectd-mod-ping \
