@@ -16,6 +16,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
+	gluon-luci-mesh-vpn-fastd \
+	gluon-luci-wifi-config \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
@@ -23,7 +25,6 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	haveged 
-#	gluon-luci-mesh-vpn-fastd \
 #	gluon-luci-switchconfig \
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
