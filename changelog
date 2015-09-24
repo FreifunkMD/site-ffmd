@@ -1,0 +1,7 @@
+changelog seit der letzten Stable
+* 5ghz stabilisiert, Wechsel auf ht20
+* peer-Limit auf 1 reduziert
+* radvd für öffentliches IPv6-Netz deaktiviert und für ULA-Netz aktiviert
+* Neue Funktion: Verschlüsselung von Mesh-VPN kann abgeschaltet werden
+* Neue Funktion: Wifi-Konfigurationspaket hinzugefügt
+* Neue Funktion: Mesh-VPN ist standardmäßig aktiv
