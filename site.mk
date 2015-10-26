@@ -38,8 +38,13 @@ GLUON_SITE_PACKAGES := \
 #	collectd-mod-memory \
 #	gluon-ffmautokey \
 
-
 DEFAULT_GLUON_RELEASE := 2015.1.2-$(shell date '+%Y%m%d')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
+
+# Default priority for updates.
+# GLUON_PRIORITY ?= 0
+
+# Languages to include
+GLUON_LANGS ?= en de
