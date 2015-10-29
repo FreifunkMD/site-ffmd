@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2015-10-26 16:02+0100\n"
+"PO-Revision-Date: 2015-10-28 16:00+0100\n"
 "Last-Translator: Juergen S. <GitHub@s3i.de>\n"
 "Language-Team: English\n"
 "Language: en\n"
@@ -24,6 +24,32 @@ msgstr ""
 "Your can find lots of information on the Freifunk Frankfurt community on "
 "<a href=\"http://ffm.freifunk.net/\">our homepage</a>.</p>"
 "<p>To get back to this configuration interface, press the reset button for "
-"3 seconds during normal operation. The device will then reboot into config "
+"5-10 seconds during normal operation. The device will then reboot into config "
 "mode.</p>"
 "<p>Have fun with your new Freifunk node and exploring the Freifunk network!</p>"
+
+
+msgid "gluon-luci-node-role:role:node"
+msgstr ""
+"Normal Node"
+
+msgid "gluon-luci-node-role:role:uplink"
+msgstr ""
+"Uplink Node"
+
+msgid "gluon-luci-node-role:role:offloader"
+msgstr ""
+"Offloader"
+
+msgid "gluon-luci-node-role:role:service"
+msgstr ""
+"Service Node"
+
+msgid "gluon-luci-node-role:role:backbone"
+msgstr ""
+"Backbone Node"
+
+msgid "gluon-luci-node-role:role:special"
+msgstr ""
+"Special Node"
+
