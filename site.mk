@@ -56,7 +56,8 @@ GLUON_SITE_PACKAGES := \
 #####################################################################################################################
 
 # This is the dev branch -> x.y.z.w-dev
-DEFAULT_GLUON_RELEASE := ffm-1.10.0.2-dev        # This needs to be changed after each online release
+# This needs to be changed after each online release
+DEFAULT_GLUON_RELEASE := ffm-1.10.0.2-dev
 
 # For homebrew development add e.g. date and time 
 # (don't use the ':' char. It will break the build)
