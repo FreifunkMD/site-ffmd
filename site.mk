@@ -42,7 +42,7 @@ GLUON_SITE_PACKAGES := \
 #####################################################################################################################
 
 # This is the dev branch
-DEFAULT_GLUON_RELEASE := 2015.2.1-dev-$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 2015.2.1-dev
 
 # For homebrew development add e.g. date and time 
 # (don't use the ':' char. It will break the build)
