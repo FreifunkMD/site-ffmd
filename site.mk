@@ -39,25 +39,10 @@ GLUON_SITE_PACKAGES := \
 #	collectd-mod-memory \
 #	gluon-ffmautokey \
 
-
-
-#####################################################################################################################
-# Firmware Versioning
-#####################################################################################################################
-# Release Stable: x.y-stable
-# Release Test:   x.y.z-test
-# Release Dev:    x.y.z.w-dev (+Date/Time)
-#
-# Geht eine Dev-Version in Test über, so können identische  Dateien in 'test' und 'dev' abgelegt werden.
-# Geht eine Test-Version in Stable über, so können identische Dateien in 'stable', 'test' und 'dev' abgelegt werden. 
-#
-# Autoupdate ist weiterhin gewehrleistet! 
-# Per Definition ist 'x.y-stable' grösser als 'x.y.z-test' und grösser als 'x.y.z.w-dev'
 #####################################################################################################################
 
-# This is the dev branch -> x.y.z.w-dev
-# This needs to be changed after each online release
-DEFAULT_GLUON_RELEASE := ffm-1.10.0.2-dev
+# This is the dev branch
+DEFAULT_GLUON_RELEASE := 2015.2.1-dev-$(shell date '+%Y%m%d')
 
 # For homebrew development add e.g. date and time 
 # (don't use the ':' char. It will break the build)
