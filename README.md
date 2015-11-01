@@ -9,7 +9,7 @@
 
 
 ### Bekannte Probleme
-* Bei Gluon 2015.2 ist das Aktivieren des Konfigurationsmoduses etwas hakelig. Die optische Reload-Rückmeldung über die LEDs kommt erst nach ca. 10 Sekunden.
+* Bei Gluon 2015.2 ist das Aktivieren des Konfigurationsmoduses etwas hakelig. Die optische Reboot-Rückmeldung über die LEDs kommt erst nach ca. 10 Sekunden.
 
 ## Weitere Änderungen seit der letzten Stable
 
