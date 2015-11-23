@@ -1,0 +1,2 @@
+PACKAGES_GLUON_REPO=git://github.com/freifunk-ffm/packages.git
+PACKAGES_GLUON_COMMIT=f3a66c493bb777b3396a378ecaa37f297aba44d4
