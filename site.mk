@@ -16,7 +16,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
-	gluon-luci-mesh-vpn-fastd \
 	ffffm-luci-mesh-vpn-fastd \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
@@ -29,6 +28,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	ffffm-ebtables-net-rules \
 	haveged 
+#	gluon-luci-mesh-vpn-fastd \
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
 #	collectd-mod-ping \
