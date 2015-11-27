@@ -19,3 +19,15 @@
 * Neue Funktion: Verschlüsselung von Mesh-VPN kann abgeschaltet werden
 * Neue Funktion: Wifi-Konfigurationspaket hinzugefügt
 * Neue Funktion: Mesh-VPN ist standardmäßig aktiv 
+
+
+# Git cheat-sheet 
+## aktuellen gluon-branch nach dev ziehen
+git fetch freifunk-gluon
+git log freifunk-gluon/master
+git checkout $whatevercommit
+git branch -d dev
+git checkout -b dev
+git push --set-upstream origin dev
+
+Bei Bedarf mit cherry-pick eigene commits wieder reinziehen
