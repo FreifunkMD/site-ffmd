@@ -19,7 +19,7 @@ GLUON_SITE_PACKAGES := \
 	ffffm-luci-mesh-vpn-fastd \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
-	gluon-luci-switchconfig \
+	ffffm-luci-switchconfig \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
