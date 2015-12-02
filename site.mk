@@ -33,7 +33,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo
 
-DEFAULT_GLUON_CHECKOUT := master
+DEFAULT_GLUON_CHECKOUT := 87dd5bb3bbe26e60e90c84560f0bb7a207f93e7b
 
 # Allow overriding the checkout from the command line
 GLUON_CHECKOUT ?= $(DEFAULT_GLUON_CHECKOUT)
