@@ -11,6 +11,7 @@ print_usage() {
     echo 'If GLUON_BRANCH is not given, experimental is set.'
     echo ''
     echo 'Options:'
+    echo '  -d  dirclean'
     echo '  -h  show this help'
     echo '  -v  verbose mode'
     echo '  -y  answer all questions with yes'
@@ -18,7 +19,7 @@ print_usage() {
 
 # command line options handling
 ALLYES='false'
-ARGS=$(getopt hvy $*)
+ARGS=$(getopt dhvy $*)
 if [ $? -ne 0 ]
 then
     print_usage
@@ -29,6 +30,10 @@ set -- $ARGS
 while true
 do
     case "$1" in
+        -d)
+            DIRCLEAN='true'
+            shift
+            ;;
         -h)
             print_usage
             exit 0
@@ -115,10 +120,17 @@ OLD_TARGETS=$(make 2>/dev/null | grep '^ [*] ' | cut -d' ' -f3)
 
 # prepare gluon tree
 echo -e "\033[32mPreparing gluon build ...\033[0m"
-for target in ${OLD_TARGETS}
-do
-    make clean GLUON_TARGET=${target} $VERBOSE
-done
+if [ "${DIRCLEAN}" = 'true' ]
+then
+    echo -e "\033[32mMaking dirclean ...\033[0m"
+    make dirclean
+else
+    for target in ${OLD_TARGETS}
+    do
+        echo -e "\033[32mCleaning old target ${target} ...\033[0m"
+        make clean GLUON_TARGET=${target} $VERBOSE
+    done
+fi
 
 git checkout master
 git pull
