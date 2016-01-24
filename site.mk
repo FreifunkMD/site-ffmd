@@ -16,19 +16,21 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
-	ffffm-luci-mesh-vpn-fastd \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
+	ffffm-luci-mesh-vpn-fastd \
 	ffffm-luci-switchconfig \
+	ffffm-luci-set-mtu \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-status-page \
 	iwinfo \
 	iptables \
-	ffffm-ebtables-net-rules \
-	haveged 
-#	gluon-luci-mesh-vpn-fastd \
+	haveged \
+
+#	ffffm-ebtables-net-rules \     # Das Package macht Probleme bei Aufruf der Statusseite andere Router 
+
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
 #	collectd-mod-ping \

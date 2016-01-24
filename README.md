@@ -1,15 +1,15 @@
 # Development Version 
 
-## 2015/11 Änderungen für Development Version ffmdev-x.y
-* Vorbereitung auf das anstehende [Gluon Release v2015.2 dev](http://gluon.readthedocs.org/en/latest/releases/v2015.2.html)
-* [Vorbereitung 802s.11 mesh](http://gluon.readthedocs.org/en/latest/releases/v2015.2.html#site-changes) (standardmäßig deaktiv, jedoch per Konfigmodus aktivierbar)
+## 2016/11 Änderungen für Development Version ffmdev-x.y
+* Vorbereitung auf das anstehende [Gluon Release v2016.1](http://gluon.readthedocs.org/en/latest/releases/v2016.1.html)
+* [Vorbereitung 802s.11 mesh](http://gluon.readthedocs.org/en/latest/releases/v2016.1.html#site-changes) (standardmäßig deaktiv, jedoch per Konfigmodus aktivierbar)
 * Langsames 'salsa2012+gmac' entfernt. [Jetzt nur noch 'salsa2012+umac'](http://gluon.readthedocs.org/en/latest/releases/v2014.4.html#fastd-v16)
 * ['Roles'](http://gluon.readthedocs.org/en/latest/features/roles.html) vorbereitet
 * Konfigurationsseite jetzt in Deutsch und Englisch
 
 
 ### Bekannte Probleme
-* Bei Gluon 2015.2 ist das Aktivieren des Konfigurationsmoduses etwas hakelig. Die optische Reboot-Rückmeldung über die LEDs kommt erst nach ca. 10 Sekunden.
+* Bei Gluon 2016.1 ist das Aktivieren des Konfigurationsmoduses etwas hakelig. Die optische Reboot-Rückmeldung über die LEDs kommt erst nach ca. 10 Sekunden.
 
 ## Weitere Änderungen seit der letzten Stable
 
@@ -19,6 +19,7 @@
 * Neue Funktion: Verschlüsselung von Mesh-VPN kann abgeschaltet werden
 * Neue Funktion: Wifi-Konfigurationspaket hinzugefügt
 * Neue Funktion: Mesh-VPN ist standardmäßig aktiv 
+* Neue Funktion: Die MTU-Block-Größe ist änderbar (1280 oder 1426 Byte)
 
 
 # Git cheat-sheet 
