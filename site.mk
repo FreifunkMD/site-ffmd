@@ -18,7 +18,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
-	ffffm-luci-mesh-vpn-fastd \
 	ffffm-luci-switchconfig \
 	ffffm-luci-set-mtu \
 	gluon-next-node \
@@ -30,6 +29,7 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 
 #	ffffm-ebtables-net-rules \     # Das Package macht Probleme bei Aufruf der Statusseite andere Router 
+#	ffffm-luci-mesh-vpn-fastd \    # Bei diesem Package verstehe ich github nicht mehr. Ist es MTU oder fastd_mesh_vpn.methods?
 
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
