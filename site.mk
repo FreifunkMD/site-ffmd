@@ -8,7 +8,7 @@ this_dir := $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-14 \
 	gluon-alfred \
-	gluon-announced \
+	gluon-respondd \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info \
