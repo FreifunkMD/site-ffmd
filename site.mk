@@ -18,8 +18,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
+    gluon-luci-mesh-vpn-fastd \
 	ffffm-luci-switchconfig \
 	ffffm-luci-set-mtu \
+    ffffm-fastd-auto-mtu \
+    ffffm-keep-radio-channel \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
@@ -27,10 +30,11 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	haveged \
+    iputils-ping \
 
+#	iputils-tracepath \            # Wir fuer 'AutoMTU' nicht benoetigt
+#	iputils-traceroute6            # Wir fuer 'AutoMTU' nicht benoetigt
 #	ffffm-ebtables-net-rules \     # Das Package macht Probleme bei Aufruf der Statusseite andere Router 
-#	ffffm-luci-mesh-vpn-fastd \    # Bei diesem Package verstehe ich github nicht mehr. Ist es MTU oder fastd_mesh_vpn.methods?
-
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
 #	collectd-mod-ping \
@@ -45,7 +49,7 @@ GLUON_SITE_PACKAGES := \
 #####################################################################################################################
 
 # This is the dev branch
-DEFAULT_GLUON_RELEASE := 2015.2.1-dev
+DEFAULT_GLUON_RELEASE := 2016.1-dev
 
 # For homebrew development add e.g. date and time 
 # (don't use the ':' char. It will break the build)
