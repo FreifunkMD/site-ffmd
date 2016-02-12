@@ -24,11 +24,11 @@
 
 # Git cheat-sheet 
 ## aktuellen gluon-branch nach dev ziehen
-git fetch freifunk-gluon
-git log freifunk-gluon/master
-git checkout $whatevercommit
-git branch -d dev
-git checkout -b dev
-git push --set-upstream origin dev
+1. git fetch freifunk-gluon
+2. git log freifunk-gluon/master
+3. git checkout $whatevercommit
+4. git branch -d dev
+5. git checkout -b dev
+6. git push --set-upstream origin dev
 
 Bei Bedarf mit cherry-pick eigene commits wieder reinziehen
