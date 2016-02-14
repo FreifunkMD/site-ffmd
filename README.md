@@ -20,12 +20,11 @@ Then download and build as follows:
     make update                                                 # Fetch all repositories
     ./site/build.sh
 
-In order to get a more verbose output, e.g. in case of build errors,
-you can call
+In order to get a more verbose output, e.g. in case of build errors, you can call
 
     ./site/build.sh -v
 
-**Note** since gluon 2015.1 builds for multiple targets. Now you need at least 45 GB of free space!
+**Note** since gluon 2015.1 the firmware is built for multiple targets. Now you need at least 45 GB of free space!
 
 Updating via SSH
 ----------------
