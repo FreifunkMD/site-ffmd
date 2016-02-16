@@ -1,4 +1,3 @@
----
 ## Frankfurter Development Version 
 
 ### ffmdev-3.89
@@ -38,7 +37,6 @@
 
 <br>
 <br>
----
 
 ## Bekannte Probleme
 Mit Gluon v2016.1 ist das Aktivieren des Konfigurationsmoduses etwas hakelig. Die optische Reboot-Rückmeldung über die LEDs kommt erst nach ca. 10 Sekunden.
@@ -46,7 +44,6 @@ Mit Gluon v2016.1 ist das Aktivieren des Konfigurationsmoduses etwas hakelig. Di
 <br>
 <br>
 <br>
----
 
 ## Git cheat-sheet 
 ### Aktuellen gluon-branch nach dev ziehen:
