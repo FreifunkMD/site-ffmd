@@ -32,6 +32,10 @@ msgid "gluon-luci-node-role:role:normal"
 msgstr ""
 "Normal Node"
 
+msgid "gluon-luci-node-role:role:outdoor"
+msgstr ""
+"Outdoor Node"
+
 msgid "gluon-luci-node-role:role:uplink"
 msgstr ""
 "Uplink Node"
