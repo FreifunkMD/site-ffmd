@@ -23,6 +23,7 @@ GLUON_SITE_PACKAGES := \
 	ffffm-luci-set-mtu \
     ffffm-fastd-auto-mtu \
     ffffm-keep-radio-channel \
+    ffffm-autoupdater-use-site-conf-branch \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
