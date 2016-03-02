@@ -1,5 +1,24 @@
 ## Frankfurter Development Version 
 
+### ffmdev-3.106
+- Package ffffm-autoupdater-use-site-conf-branch eingebunden
+- Autoupdate-Branch in site.conf temporär auf 'test' gesetzt 
+- Auto-MTU startet 'fastd' nicht neu -> MTU wird erst nach Reboot übernommen
+
+#### Known Issues
+- opkg-Pfade sind noch IPv4
+
+### ffmdev-3.101
+- fastd Ports jetzt wieder 10001 und 10002 (fastd-Links mit grosser MTU jetzt vorhanden)
+- Typo in Konfig-Modus-Texten (DE/EN)
+- Role: Outdoor Node hinzu
+- Build spezifische opkg-Module werden auf Frankfurter Server abgelegt
+- opkg-Pfade hinzu
+
+#### Known Issues
+- Auto-MTU funktioniert nach einem Update nicht immer beim x86-Image
+- opkg-Pfade sind noch IPv4
+
 ### ffmdev-3.89
 
 - Gebaut 02/2016
