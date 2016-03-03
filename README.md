@@ -1,5 +1,13 @@
 ## Frankfurter Development Version 
 
+### ffmdev-3.107 (noch nicht ausgerollt)
+- Gebaut 03.03.2016 
+- Freigegebenes Gluon v2016.1.1
+- Autoupdate-Branch in site.conf wieder auf 'dev' gesetzt 
+
+#### Known Issues
+- opkg-Pfade sind noch IPv4
+
 ### ffmdev-3.106
 - Package ffffm-autoupdater-use-site-conf-branch eingebunden
 - Autoupdate-Branch in site.conf temporär auf 'test' gesetzt 
