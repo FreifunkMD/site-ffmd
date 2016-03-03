@@ -4,7 +4,7 @@ Freifunk Magdeburg Firmware
 How To Build
 ------------
 
-This is building FFMD firmware in a nutshell. For more on options or building specific branches please refer to the build script, [the official Gluon repository](https://github.com/freifunk-gluon/gluon) at GitHub, or [the official Gluon documentation](https://gluon.readthedocs.org/).
+This is building FFMD firmware in a nutshell. For more on options or building specific branches please refer to the build script, [the official Gluon repository](https://github.com/freifunk-gluon/gluon) at GitHub, or [the official Gluon documentation](http://gluon.readthedocs.org/).
 
 To compile the firmware you need a working build environment and packages for git, subversion, gawk, unzip, ncurses headers and zlib headers.
 
@@ -52,8 +52,10 @@ Verify a successful upgrade by
 
 Changelog
 ---------
+* 0.35: *gluon 2016.1.1*
+  * see http://gluon.readthedocs.org/en/v2016.1.1/releases/v2016.1.1.html
 * 0.34: *gluon 2016.1*
-  * see https://gluon.readthedocs.org/en/v2016.1/releases/v2016.1.html
+  * see http://gluon.readthedocs.org/en/v2016.1/releases/v2016.1.html
   * firmware build script: add option -d for dirclean 
 * 0.33: *gluon 2015.1.2*
   * see http://gluon.readthedocs.org/en/v2015.1.2/releases/v2015.1.2.html
