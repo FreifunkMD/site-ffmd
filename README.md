@@ -1,17 +1,21 @@
 ## Frankfurter Development Version 
 
-### ffmdev-3.107 (noch nicht ausgerollt)
-- Gebaut 03.03.2016 
+### ffmdev-3.108 (noch nicht ausgerollt)
+- Gebaut 05.03.2016 
 - Freigegebenes Gluon v2016.1.1
-- Autoupdate-Branch in site.conf wieder auf 'dev' gesetzt 
+- 'Autoupdate-Branch' wieder auf 'dev' gesetzt 
+- 'next_node.ipv6' ist jetzt fddd:5d16:b5dd:ffff::1
+- opkg-Pfad der Kernel-Module zeigt nun auf http://1.updates.services.ffffm/dev/sysupgrade/modules/...
+- Auto-MTU Korrektur: Eine neu erkannte MTU wird jetzt wieder sofort übernommen
+
 
 #### Known Issues
-- opkg-Pfade sind noch IPv4
+- opkg-Pfad zum OpwnWrt Repository ist noch IPv4
 
 ### ffmdev-3.106
-- Package ffffm-autoupdater-use-site-conf-branch eingebunden
-- Autoupdate-Branch in site.conf temporär auf 'test' gesetzt 
-- Auto-MTU startet 'fastd' nicht neu -> MTU wird erst nach Reboot übernommen
+- Package ffffm-autoupdater-use-site-conf-branch eingebunden (FFM-Eigenentwicklung)
+- site.conf: 'Autoupdate-Branch' temporär auf 'test' gesetzt 
+- Auto-MTU: Wegen x86-Problemen wird jetzt eine neu erkannte MTU erst nach einem Reboot übernommen
 
 #### Known Issues
 - opkg-Pfade sind noch IPv4
