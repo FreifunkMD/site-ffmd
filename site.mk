@@ -10,6 +10,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
+	ffffm-ebtables-net-rules \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-luci-admin \
@@ -26,7 +27,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	iwinfo \
 	iptables \
-	ffffm-ebtables-net-rules \
 	haveged 
 #	gluon-luci-mesh-vpn-fastd \
 #	gluon-ffmcollectdconfig \
