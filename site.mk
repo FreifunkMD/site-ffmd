@@ -1,7 +1,7 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-14 \
 	gluon-alfred \
-	gluon-announced \
+	gluon-respondd \
 	gluon-autoupdater \
 	gluon-setup-mode \
 	gluon-config-mode-core \
@@ -17,15 +17,20 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
-	ffffm-luci-mesh-vpn-fastd \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
+    gluon-luci-mesh-vpn-fastd \
 	ffffm-luci-switchconfig \
+	ffffm-luci-set-mtu \
+    ffffm-fastd-auto-mtu \
+    ffffm-keep-radio-channel \
+    ffffm-autoupdater-use-site-conf-branch \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-status-page \
 	iwinfo \
+    iputils-ping \
 	iptables \
 	haveged 
 #	gluon-luci-mesh-vpn-fastd \
@@ -43,7 +48,7 @@ GLUON_SITE_PACKAGES := \
 #####################################################################################################################
 
 # This is the dev branch
-DEFAULT_GLUON_RELEASE := 2015.2.1-dev
+DEFAULT_GLUON_RELEASE := 2016.1-dev
 
 # For homebrew development add e.g. date and time 
 # (don't use the ':' char. It will break the build)
