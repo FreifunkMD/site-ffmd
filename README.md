@@ -1,7 +1,7 @@
 ## Frankfurter Development Version 
 
-### ffmdev-3.108 (noch nicht ausgerollt)
-- Gebaut 05.03.2016 
+### ffmdev-3.111
+- Gebaut 08.03.2016 
 - Freigegebenes Gluon v2016.1.1
 - 'Autoupdate-Branch' wieder auf 'dev' gesetzt 
 - 'next_node.ipv6' ist jetzt fddd:5d16:b5dd:ffff::1
