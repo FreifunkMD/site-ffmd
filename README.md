@@ -1,5 +1,12 @@
 ## Frankfurter Development Version 
 
+### ffmdev-3.116
+- Freigegebenes Gluon v2016.1.2
+ 
+#### Known Issues
+- opkg-Pfad zum OpwnWrt Repository ist noch IPv4
+- Aufruf fremder Router-Statusseiten bereiten mit OS X Rechnern Probleme
+
 ### ffmdev-3.114
 - Gebaut 11.03.2016 
 - Freigegebenes Gluon v2016.1.1
@@ -8,7 +15,6 @@
 - 'prefix6' jetzt 'fddd:5d16:b5dd:0::/64'
 - opkg-Pfad der Kernel-Module zeigt nun auf http://1.updates.services.ffffm/dev/sysupgrade/modules/...
 - Auto-MTU Korrektur: Eine neu erkannte MTU wird jetzt wieder sofort übernommen
-
 
 #### Known Issues
 - opkg-Pfad zum OpwnWrt Repository ist noch IPv4
