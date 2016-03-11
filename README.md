@@ -1,10 +1,11 @@
 ## Frankfurter Development Version 
 
-### ffmdev-3.111
-- Gebaut 08.03.2016 
+### ffmdev-3.114
+- Gebaut 11.03.2016 
 - Freigegebenes Gluon v2016.1.1
 - 'Autoupdate-Branch' wieder auf 'dev' gesetzt 
 - 'next_node.ipv6' ist jetzt fddd:5d16:b5dd:ffff::1
+- 'prefix6' jetzt 'fddd:5d16:b5dd:0::/64'
 - opkg-Pfad der Kernel-Module zeigt nun auf http://1.updates.services.ffffm/dev/sysupgrade/modules/...
 - Auto-MTU Korrektur: Eine neu erkannte MTU wird jetzt wieder sofort übernommen
 
