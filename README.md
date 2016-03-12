@@ -1,11 +1,11 @@
 ## Frankfurter Development Version 
 
-### ffmdev-3.116
+### ffmdev-3.117
 - Freigegebenes Gluon v2016.1.2
  
 #### Known Issues
 - opkg-Pfad zum OpwnWrt Repository ist noch IPv4
-- Aufruf fremder Router-Statusseiten bereiten mit OS X Rechnern Probleme
+- Aufruf fremder Router-Statusseiten bereitet OS X Rechnern Probleme
 
 ### ffmdev-3.114
 - Gebaut 11.03.2016 
