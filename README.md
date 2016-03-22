@@ -1,11 +1,24 @@
 ## Frankfurter Development Version 
 
+
+### v1.10.1.1-dev-118
+- Gebaut 22.03.2016
+- Bugfix: Konfiguration der Auto-MTU-Erkennung 
+- Neues Package 'ffffm-banner' hinzu
+
+
+#### Known Issues
+- opkg-Pfad zum OpwnWrt Repository ist noch IPv4
+
+
 ### ffmdev-3.117
+- Gebaut 12.03.2016 
 - Freigegebenes Gluon v2016.1.2
  
 #### Known Issues
 - opkg-Pfad zum OpwnWrt Repository ist noch IPv4
-- Aufruf fremder Router-Statusseiten bereitet OS X Rechnern Probleme
+- Die Auto-MTU-Erkennung funktioniert wegen Fehlkonfiguration nicht.
+- Der Aufruf fremder Router-Statusseiten bereitet manchmal mit OS X Rechnern Probleme
 
 ### ffmdev-3.114
 - Gebaut 11.03.2016 
