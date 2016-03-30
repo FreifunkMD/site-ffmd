@@ -1,5 +1,6 @@
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-14 \
+ 	gluon-mesh-babel \
+	gluon-radio-config \
 	gluon-alfred \
 	gluon-respondd \
 	gluon-autoupdater \
@@ -32,6 +33,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	haveged \
     iputils-ping \
+#	gluon-mesh-batman-adv-14 \
 
 #	iputils-tracepath \            # Wir fuer 'AutoMTU' nicht benoetigt
 #	iputils-traceroute6            # Wir fuer 'AutoMTU' nicht benoetigt
