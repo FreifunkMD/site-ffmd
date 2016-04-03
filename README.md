@@ -1,5 +1,9 @@
 ## Frankfurter Development Version 
 
+### v1.10.1.2-dev-120
+- Gebaut 02.04.2016
+- Freigegebenes Gluon v2016.1.3
+
 
 ### v1.10.1.1-dev-118
 - Gebaut 22.03.2016
