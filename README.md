@@ -35,8 +35,8 @@ In case you do not have physical access to your router, an update can be perform
 
 For the update connect to your device via IPv6 and issue the following commands, using the firmware file that matches your device:
 
-    cd /tmp 
-    wget http://firmware.md.freifunk.net/stable/LATEST/sysupgrade/gluon-ffmd-0.28-tp-link-tl-wr841n-nd-v9-sysupgrade.bin 
+    cd /tmp
+    wget http://firmware.md.freifunk.net/stable/LATEST/sysupgrade/gluon-ffmd-0.28-tp-link-tl-wr841n-nd-v9-sysupgrade.bin
     sync; sysctl -w vm.drop_caches=3
     sysupgrade gluon-ffmd-0.28-tp-link-tl-wr841n-nd-v9-sysupgrade.bin
 
@@ -52,13 +52,16 @@ Verify a successful upgrade by
 
 Changelog
 ---------
-* 0.36: *gluon 2016.1.3*
-  * see http://gluon.readthedocs.org/en/v2016.1.2/releases/v2016.1.2.html and http://gluon.readthedocs.org/en/v2016.1.3/releases/v2016.1.3.html
+* 0.36: *gluon 2016.1.4*
+  * see
+    * http://gluon.readthedocs.org/en/v2016.1.2/releases/v2016.1.2.html
+    * http://gluon.readthedocs.org/en/v2016.1.3/releases/v2016.1.3.html
+    * http://gluon.readthedocs.org/en/v2016.1.4/releases/v2016.1.4.html
 * 0.35: *gluon 2016.1.1*
   * see http://gluon.readthedocs.org/en/v2016.1.1/releases/v2016.1.1.html
 * 0.34: *gluon 2016.1*
   * see http://gluon.readthedocs.org/en/v2016.1/releases/v2016.1.html
-  * firmware build script: add option -d for dirclean 
+  * firmware build script: add option -d for dirclean
 * 0.33: *gluon 2015.1.2*
   * see http://gluon.readthedocs.org/en/v2015.1.2/releases/v2015.1.2.html
 * 0.32: *gluon 2015.1.1*
