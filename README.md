@@ -4,6 +4,8 @@
 - Gebaut 02.04.2016
 - Freigegebenes Gluon v2016.1.3
 
+#### Known Issues
+- opkg-Pfad zum OpwnWrt Repository ist IPv4
 
 ### v1.10.1.1-dev-118
 - Gebaut 22.03.2016
