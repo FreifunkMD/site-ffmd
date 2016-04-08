@@ -1,6 +1,5 @@
 GLUON_SITE_PACKAGES := \
  	gluon-mesh-babel \
-	gluon-radio-config \
 	gluon-alfred \
 	gluon-respondd \
 	gluon-autoupdater \
