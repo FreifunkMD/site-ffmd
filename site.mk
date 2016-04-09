@@ -1,38 +1,40 @@
 GLUON_SITE_PACKAGES := \
  	gluon-mesh-babel \
-	gluon-alfred \
-	gluon-respondd \
-	gluon-autoupdater \
-	gluon-setup-mode \
-	gluon-config-mode-core \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-contact-info \
-	gluon-ebtables-filter-multicast \
-	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
-	gluon-luci-private-wifi \
-	gluon-luci-wifi-config \
-	gluon-luci-node-role \
-    gluon-luci-mesh-vpn-fastd \
-	ffffm-luci-switchconfig \
-	ffffm-luci-set-mtu \
     ffffm-fastd-auto-mtu \
     ffffm-keep-radio-channel \
     ffffm-autoupdater-use-site-conf-branch \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
-	gluon-status-page \
+	gluon-client-bridge \
 	iwinfo \
 	iptables \
 	haveged \
     iputils-ping \
+
 #	gluon-mesh-batman-adv-14 \
+#	gluon-alfred \
+#	gluon-respondd \
+#	gluon-autoupdater \
+#	gluon-setup-mode \
+#	gluon-config-mode-core \
+#	gluon-config-mode-autoupdater \
+#	gluon-config-mode-hostname \
+#	gluon-config-mode-mesh-vpn \
+#	gluon-config-mode-geo-location \
+#	gluon-config-mode-contact-info \
+#	gluon-ebtables-filter-multicast \
+#	gluon-ebtables-filter-ra-dhcp \
+#	gluon-luci-admin \
+#	gluon-luci-autoupdater \
+#	gluon-luci-portconfig \
+#	gluon-luci-private-wifi \
+#	gluon-luci-wifi-config \
+#	gluon-luci-node-role \
+#   gluon-luci-mesh-vpn-fastd \
+#	ffffm-luci-switchconfig \
+#	ffffm-luci-set-mtu \
+#	gluon-status-page \
 
 #	iputils-tracepath \            # Wir fuer 'AutoMTU' nicht benoetigt
 #	iputils-traceroute6            # Wir fuer 'AutoMTU' nicht benoetigt
