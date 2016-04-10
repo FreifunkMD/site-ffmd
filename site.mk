@@ -1,6 +1,6 @@
 GLUON_SITE_PACKAGES := \
  	gluon-mesh-babel \
-    ffffm-fastd-auto-mtu \
+#    ffffm-fastd-auto-mtu \
     ffffm-keep-radio-channel \
     ffffm-autoupdater-use-site-conf-branch \
 	gluon-next-node \
