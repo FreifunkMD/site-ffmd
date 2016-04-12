@@ -1,9 +1,7 @@
 GLUON_SITE_PACKAGES := \
  	gluon-mesh-babel \
-#    ffffm-fastd-auto-mtu \
     ffffm-keep-radio-channel \
     ffffm-autoupdater-use-site-conf-branch \
-	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-client-bridge \
@@ -12,6 +10,8 @@ GLUON_SITE_PACKAGES := \
 	haveged \
     iputils-ping \
 
+#    ffffm-fastd-auto-mtu \
+#	gluon-next-node \
 #	gluon-mesh-batman-adv-14 \
 #	gluon-alfred \
 #	gluon-respondd \
