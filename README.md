@@ -1,5 +1,10 @@
 ## Frankfurter Development Version 
 
+### v1.10.2.1-dev-142
+- Gebaut 29.04.2016
+- Freigegebenes Gluon v2016.1.4
+- Anpassung WLAN-Treiber: https://gluon.readthedocs.io/en/v2016.1.4/releases/v2016.1.4.html
+
 ### v1.10.1.2-dev-120
 - Gebaut 02.04.2016
 - Freigegebenes Gluon v2016.1.3
