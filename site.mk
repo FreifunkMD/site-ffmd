@@ -2,6 +2,8 @@ GLUON_SITE_PACKAGES := \
  	gluon-mesh-babel \
 	ffffm-keep-radio-channel \
 	ffffm-autoupdater-use-site-conf-branch \
+	ffffm-fastd-auto-mtu \
+	ffffm-banner \
 	gluon-next-node \
 	gluon-radvd \
 	gluon-client-bridge \
@@ -18,11 +20,13 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-contact-info \
 	gluon-luci-admin \
 	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
 	gluon-status-page \
+	gluon-l3roamd \
+# nett, aber abhängig von batman
+#	gluon-luci-portconfig \
 
 
 # abh von fastd
@@ -33,10 +37,9 @@ GLUON_SITE_PACKAGES := \
 
 # wahrscheinlich nicht sinnvoll weil unsupported
 #	ffffm-luci-switchconfig \
-#	ffffm-luci-set-mtu \
 
 
-# l2 relikte
+# brauchen wir wohl mit babel nicht mehr
 #	gluon-ebtables-filter-multicast \
 #	gluon-ebtables-filter-ra-dhcp \
 #	ffffm-ebtables-net-rules \     # Das Package macht Probleme bei Aufruf der Statusseite andere Router 
