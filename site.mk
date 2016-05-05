@@ -35,26 +35,14 @@ GLUON_SITE_PACKAGES := \
     iptables \
     haveged
  
-#	gluon-luci-mesh-vpn-fastd \
-#	gluon-ffmcollectdconfig \
-#	collectd5 \
-#	collectd-mod-ping \
-#	collectd-mod-interface \
-#	collectd-mod-cpu \
-#	collectd-mod-network \
-#	collectd-mod-iwinfo \
-#	collectd-mod-load \
-#	collectd-mod-memory \
-#	gluon-ffmautokey \
-
 #####################################################################################################################
 
 # This is the dev branch
-DEFAULT_GLUON_RELEASE := 2016.1-dev
+DEFAULT_GLUON_RELEASE := 2016.1.x-Homebrew
 
 # For homebrew development add e.g. date and time 
-# (don't use the ':' char. It will break the build)
-# DEFAULT_GLUON_RELEASE := $(DEFAULT_GLUON_RELEASE)-$(shell date '+%m.%d-%H%M')
+# (Note: Don't use the ':' char. It will break the build)
+DEFAULT_GLUON_RELEASE := $(DEFAULT_GLUON_RELEASE)-$(shell date '+%Y.%m.%d')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
