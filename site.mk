@@ -23,13 +23,12 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
 	gluon-status-page \
+	gluon-l3roamd \
+	gluon-mesh-vpn-fastd-babel \
+	gluon-luci-mesh-vpn-fastd \
+	gluon-config-mode-mesh-vpn \
+	ffffm-fastd-auto-mtu \
 
-
-# abh von fastd
-#	ffffm-fastd-auto-mtu \
-#	gluon-mesh-vpn-fastd-babel \
-#	gluon-config-mode-mesh-vpn \
-#	gluon-luci-mesh-vpn-fastd \
 
 # wahrscheinlich nicht sinnvoll weil unsupported
 #	ffffm-luci-switchconfig \
