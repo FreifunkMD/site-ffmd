@@ -24,10 +24,12 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-node-role \
 	gluon-status-page \
 	gluon-l3roamd \
-	gluon-mesh-vpn-fastd-babel \
+	gluon-mesh-vpn-fastd \
 	gluon-luci-mesh-vpn-fastd \
 	gluon-config-mode-mesh-vpn \
-	ffffm-fastd-auto-mtu \
+
+# mit dem Umstieg auf Babel sinnvoll
+#	ffffm-fastd-auto-mtu \
 
 
 # wahrscheinlich nicht sinnvoll weil unsupported
