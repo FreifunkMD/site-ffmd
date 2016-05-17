@@ -2,8 +2,6 @@ GLUON_SITE_PACKAGES := \
  	gluon-mesh-babel \
 	ffffm-keep-radio-channel \
 	ffffm-autoupdater-use-site-conf-branch \
-	ffffm-fastd-auto-mtu \
-	ffffm-banner \
 	gluon-next-node \
 	gluon-radvd \
 	gluon-client-bridge \
@@ -25,15 +23,20 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-node-role \
 	gluon-status-page \
 	gluon-l3roamd \
+	gluon-luci-portconfig \
+	gluon-mesh-vpn-fastd \
+	gluon-config-mode-mesh-vpn \
+	gluon-luci-mesh-vpn-fastd \
+	ffffm-fastd-auto-mtu \
+
+# einbauen bei internetverbindung
+#	ffffm-banner \
+#	ffffm-fastd-auto-mtu \
+#
 # nett, aber abhängig von batman
-#	gluon-luci-portconfig \
 
 
 # abh von fastd
-#	ffffm-fastd-auto-mtu \
-#	gluon-mesh-vpn-fastd-babel \
-#	gluon-config-mode-mesh-vpn \
-#	gluon-luci-mesh-vpn-fastd \
 
 # wahrscheinlich nicht sinnvoll weil unsupported
 #	ffffm-luci-switchconfig \
