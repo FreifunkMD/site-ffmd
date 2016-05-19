@@ -52,6 +52,8 @@ Verify a successful upgrade by
 
 Changelog
 ---------
+* 0.37: *gluon 2016.1.5*
+  * see https://gluon.readthedocs.io/en/v2016.1.5/releases/v2016.1.5.html
 * 0.36: *gluon 2016.1.4*
   * see
     * http://gluon.readthedocs.org/en/v2016.1.2/releases/v2016.1.2.html
