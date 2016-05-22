@@ -28,10 +28,10 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-luci-mesh-vpn-fastd \
 	ffffm-fastd-auto-mtu \
+	ffffm-banner \
+	ffffm-fastd-auto-mtu \
 
 # einbauen bei internetverbindung
-#	ffffm-banner \
-#	ffffm-fastd-auto-mtu \
 #
 # nett, aber abhängig von batman
 
