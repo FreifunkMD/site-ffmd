@@ -33,6 +33,7 @@ GLUON_SITE_PACKAGES := \
     iwinfo \
     iputils-ping \
     iptables \
+    ffffm-additional-wifi-json-info \
     haveged
  
 #####################################################################################################################
