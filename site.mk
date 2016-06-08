@@ -32,20 +32,10 @@ GLUON_SITE_PACKAGES := \
 # einbauen bei internetverbindung
 #	ffffm-banner \
 #	ffffm-fastd-auto-mtu \
-#
-# nett, aber abhängig von batman
 
-
-# abh von fastd
 
 # wahrscheinlich nicht sinnvoll weil unsupported
 #	ffffm-luci-switchconfig \
-
-
-# brauchen wir wohl mit babel nicht mehr
-#	gluon-ebtables-filter-multicast \
-#	gluon-ebtables-filter-ra-dhcp \
-#	ffffm-ebtables-net-rules \     # Das Package macht Probleme bei Aufruf der Statusseite andere Router 
 
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
