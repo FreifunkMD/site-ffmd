@@ -10,7 +10,6 @@ GLUON_SITE_PACKAGES := \
     gluon-config-mode-mesh-vpn \
     gluon-config-mode-geo-location \
     gluon-config-mode-contact-info \
-    ffffm-ebtables-net-rules \
     gluon-ebtables-filter-multicast \
     gluon-ebtables-filter-ra-dhcp \
     gluon-luci-admin \
@@ -18,27 +17,36 @@ GLUON_SITE_PACKAGES := \
     gluon-luci-portconfig \
     gluon-luci-private-wifi \
     gluon-luci-wifi-config \
-    gluon-luci-node-role \
-    gluon-luci-mesh-vpn-fastd \
-    ffffm-luci-switchconfig \
-    ffffm-luci-set-mtu \
+    ffffm-ebtables-net-rules \
     ffffm-fastd-auto-mtu \
     ffffm-keep-radio-channel \
-    ffffm-autoupdater-use-site-conf-branch \
     ffffm-banner \
-    gluon-next-node \
+    ffffm-autoupdater-use-site-conf-branch \
+    ffffm-additional-wifi-json-info \
+    ffffm-ath9k-broken-wifi-workaround \
+    ffffm-enlarge-dns-cache \
     gluon-mesh-vpn-fastd \
+    gluon-next-node \
     gluon-radvd \
     gluon-status-page \
     iwinfo \
-    iputils-ping \
     iptables \
-    ffffm-additional-wifi-json-info \
-    haveged
- 
+    iputils-ping \
+    haveged \
+
+
+
+
+#    gluon-luci-mesh-vpn-fastd \
+#    gluon-luci-node-role \
+#    ffffm-luci-switchconfig \
+
+
 #####################################################################################################################
 
-# This is the dev branch
+# This is the test branch
+
+# Gluon Base Release
 DEFAULT_GLUON_RELEASE := 2016.1.x-Homebrew
 
 # For homebrew development add e.g. date and time 
