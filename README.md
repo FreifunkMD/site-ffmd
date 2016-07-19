@@ -1,5 +1,41 @@
 ## Frankfurter Development Version 
 
+### v1.10.3.4-dev-166
+- Gebaut 13.07.2016
+- fast Identisch mit [Test v1.10.4-test-96](https://github.com/freifunk-ffm/site-ffffm/tree/test#v1104-test-96-noch-nicht-automatisch-ausgerollt), das Package ath9k-broken-wifi-workaround liegt jedoch in neuerer Version vor.
+
+### v1.10.3.2-dev-154
+- Gebaut 26.05.2016
+- Basis: freigegebenes Gluon **v2015.1.2**
+- Neues Package ffffm-airtime-v2015.1.x eingebaut
+
+#### Known Issues
+- Der Befehl 'help' (aus ffffm-banner) liefert nicht die erwünschte Ausgabe.
+- Kein opkg-Pfad zu Build spezifischen Kernelmodulen vorhanden.
+
+
+### v1.10.3.1-dev-150
+- Gebaut 18.05.2016
+- Basis: freigegebenes Gluon **v2015.1.2**
+- Konfiguration und Packages von ffmstable-1.10 übernommen
+
+Änderungen gegenüber der Firmware ffmstable-1.10 (Gluon v2015.1.2):
+
+ - Neue Hardwareunterstützung
+   - WR841N/ND v10/v11
+   - WR1043ND v3
+   - CPE210/510 v1.1 
+ - site.conf: Anpassungen bezüglich IPv6
+ - site.conf: Mesh-VPN per default aktiv
+ - Package 'ffffm-ebtable-net-rules' hinzu
+ - Package 'ffffm-keep-radio-channel' hinzu
+ - Package 'ffffm-banner' hinzu
+ - Konfigurationsmodus jetzt mehrsprachig. 
+
+#### Known Issues
+- Der Befehl 'help' (aus ffffm-banner) liefert nicht die erwünschte Ausgabe.
+- Kein opkg-Pfad zu Build spezifischen Kernelmodulen vorhanden.
+
 ### v1.10.2.1-dev-142
 - Gebaut 29.04.2016
 - Freigegebenes Gluon v2016.1.4
