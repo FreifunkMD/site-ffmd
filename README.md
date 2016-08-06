@@ -1,5 +1,11 @@
 ## Frankfurter Development Version 
 
+### v1.10.3.5-dev-170
+- Gebaut 06.08.2016
+- Dieses ist eine "Raus aus dem Dev-, rein in den Test-Branch" Firmware
+- Autoupdate wird aktiviert
+- Autoupdate-Branch ist "test"
+
 ### v1.10.3.4-dev-166
 - Gebaut 13.07.2016
 - fast Identisch mit [Test v1.10.4-test-96](https://github.com/freifunk-ffm/site-ffffm/tree/test#v1104-test-96-noch-nicht-automatisch-ausgerollt), das Package ath9k-broken-wifi-workaround liegt jedoch in neuerer Version vor.
