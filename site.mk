@@ -25,6 +25,7 @@ GLUON_SITE_PACKAGES := \
     ffffm-ath9k-broken-wifi-workaround \
     ffffm-disable-80211b \
     ffffm-enlarge-dns-cache \
+    ffffm-autoupdater-use-site-conf-branch \
     gluon-mesh-vpn-fastd \
     gluon-next-node \
     gluon-radvd \
@@ -33,13 +34,6 @@ GLUON_SITE_PACKAGES := \
     iptables \
     iputils-ping \
     haveged \
-
-
-
-
-#    gluon-luci-mesh-vpn-fastd \
-#    gluon-luci-node-role \
-#    ffffm-luci-switchconfig \
 
 
 #####################################################################################################################
