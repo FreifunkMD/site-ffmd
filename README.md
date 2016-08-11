@@ -1,10 +1,10 @@
 ## Frankfurter Development Version 
 
-### v1.10.3.5-dev-170
-- Gebaut 06.08.2016
-- Dieses ist eine "Raus aus dem Dev-, rein in den Test-Branch" Firmware
+### v1.10.3.5-dev-xxx
+- Gebaut xx.yy.2016
+- Dieses ist eine "Raus aus dem Dev-, rein in den Stable-Branch" Firmware
 - Autoupdate wird aktiviert
-- Autoupdate-Branch ist "test"
+- Autoupdate-Branch wird automatisch auf "stable" gesetzt
 
 ### v1.10.3.4-dev-166
 - Gebaut 13.07.2016
