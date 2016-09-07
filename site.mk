@@ -1,5 +1,4 @@
 GLUON_SITE_PACKAGES := \
-<<<<<<< HEAD
  	gluon-mesh-babel \
 	ffffm-keep-radio-channel \
 	ffffm-autoupdater-use-site-conf-branch \
