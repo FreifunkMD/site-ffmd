@@ -28,14 +28,25 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-luci-mesh-vpn-fastd \
 	ffffm-fastd-auto-mtu \
-
-# einbauen bei internetverbindung
-#	ffffm-banner \
-#	ffffm-fastd-auto-mtu \
+	ffffm-banner \
+	ffffm-fastd-auto-mtu \
+    ffffm-additional-wifi-json-info \
+    ffffm-ath9k-broken-wifi-workaround \
+    ffffm-disable-80211b \
+    ffffm-enlarge-dns-cache \
+    iputils-ping \
 
 
 # wahrscheinlich nicht sinnvoll weil unsupported
 #	ffffm-luci-switchconfig \
+
+
+# abh von fastd
+
+
+# brauchen wir wohl mit babel nicht mehr
+#	gluon-ebtables-filter-multicast \
+#	gluon-ebtables-filter-ra-dhcp \
 
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
@@ -48,14 +59,17 @@ GLUON_SITE_PACKAGES := \
 #	collectd-mod-memory \
 #	gluon-ffmautokey \
 
+
 #####################################################################################################################
 
-# This is the dev branch
-DEFAULT_GLUON_RELEASE := 2016.1-dev
+# This is the Dev branch
+
+# Gluon Base Release
+DEFAULT_GLUON_RELEASE := Homebrew-babel
 
 # For homebrew development add e.g. date and time 
-# (don't use the ':' char. It will break the build)
-# DEFAULT_GLUON_RELEASE := $(DEFAULT_GLUON_RELEASE)-$(shell date '+%m.%d-%H%M')
+# (Note: Don't use the ':' char. It will break the build)
+DEFAULT_GLUON_RELEASE := $(DEFAULT_GLUON_RELEASE)-$(shell date '+%Y.%m.%d')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)

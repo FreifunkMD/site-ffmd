@@ -1,17 +1,98 @@
 ## Frankfurter Development Version 
 
-### ffmdev-3.107 (noch nicht ausgerollt)
-- Gebaut 03.03.2016 
-- Freigegebenes Gluon v2016.1.1
-- Autoupdate-Branch in site.conf wieder auf 'dev' gesetzt 
+### v1.10.3.5-dev-xxx
+- Gebaut xx.yy.2016
+- Dieses ist eine "Raus aus dem Dev-, rein in den Stable-Branch" Firmware
+- Autoupdate wird aktiviert
+- Autoupdate-Branch wird automatisch auf "stable" gesetzt
+
+### v1.10.3.4-dev-166
+- Gebaut 13.07.2016
+- fast Identisch mit [Test v1.10.4-test-96](https://github.com/freifunk-ffm/site-ffffm/tree/test#v1104-test-96-noch-nicht-automatisch-ausgerollt), das Package ath9k-broken-wifi-workaround liegt jedoch in neuerer Version vor.
+
+### v1.10.3.2-dev-154
+- Gebaut 26.05.2016
+- Basis: freigegebenes Gluon **v2015.1.2**
+- Neues Package ffffm-airtime-v2015.1.x eingebaut
 
 #### Known Issues
-- opkg-Pfade sind noch IPv4
+- Der Befehl 'help' (aus ffffm-banner) liefert nicht die erwünschte Ausgabe.
+- Kein opkg-Pfad zu Build spezifischen Kernelmodulen vorhanden.
+
+
+### v1.10.3.1-dev-150
+- Gebaut 18.05.2016
+- Basis: freigegebenes Gluon **v2015.1.2**
+- Konfiguration und Packages von ffmstable-1.10 übernommen
+
+Änderungen gegenüber der Firmware ffmstable-1.10 (Gluon v2015.1.2):
+
+ - Neue Hardwareunterstützung
+   - WR841N/ND v10/v11
+   - WR1043ND v3
+   - CPE210/510 v1.1 
+ - site.conf: Anpassungen bezüglich IPv6
+ - site.conf: Mesh-VPN per default aktiv
+ - Package 'ffffm-ebtable-net-rules' hinzu
+ - Package 'ffffm-keep-radio-channel' hinzu
+ - Package 'ffffm-banner' hinzu
+ - Konfigurationsmodus jetzt mehrsprachig. 
+
+#### Known Issues
+- Der Befehl 'help' (aus ffffm-banner) liefert nicht die erwünschte Ausgabe.
+- Kein opkg-Pfad zu Build spezifischen Kernelmodulen vorhanden.
+
+### v1.10.2.1-dev-142
+- Gebaut 29.04.2016
+- Freigegebenes Gluon v2016.1.4
+- Anpassung WLAN-Treiber: https://gluon.readthedocs.io/en/v2016.1.4/releases/v2016.1.4.html
+
+#### Known Issues
+- Das WLAN hängt sich bei einigen wenigen Routern manchmal auf
+- opkg-Pfad zum OpwnWrt Repository ist IPv4
+
+### v1.10.1.2-dev-120
+- Gebaut 02.04.2016
+- Freigegebenes Gluon v2016.1.3
+
+#### Known Issues
+- Das WLAN hängt sich bei einigen wenigen Routern manchmal auf
+- opkg-Pfad zum OpwnWrt Repository ist IPv4
+
+### v1.10.1.1-dev-118
+- Gebaut 22.03.2016
+- Bugfix: Konfiguration der Auto-MTU-Erkennung 
+- Neues Package 'ffffm-banner' hinzu
+
+#### Known Issues
+- opkg-Pfad zum OpwnWrt Repository ist noch IPv4
+
+
+### ffmdev-3.117
+- Gebaut 12.03.2016 
+- Freigegebenes Gluon v2016.1.2
+ 
+#### Known Issues
+- opkg-Pfad zum OpwnWrt Repository ist noch IPv4
+- Die Auto-MTU-Erkennung funktioniert wegen Fehlkonfiguration nicht.
+- Der Aufruf fremder Router-Statusseiten bereitet manchmal mit OS X Rechnern Probleme
+
+### ffmdev-3.114
+- Gebaut 11.03.2016 
+- Freigegebenes Gluon v2016.1.1
+- 'Autoupdate-Branch' wieder auf 'dev' gesetzt 
+- 'next_node.ipv6' ist jetzt fddd:5d16:b5dd:ffff::1
+- 'prefix6' jetzt 'fddd:5d16:b5dd:0::/64'
+- opkg-Pfad der Kernel-Module zeigt nun auf http://1.updates.services.ffffm/dev/sysupgrade/modules/...
+- Auto-MTU Korrektur: Eine neu erkannte MTU wird jetzt wieder sofort übernommen
+
+#### Known Issues
+- opkg-Pfad zum OpwnWrt Repository ist noch IPv4
 
 ### ffmdev-3.106
-- Package ffffm-autoupdater-use-site-conf-branch eingebunden
-- Autoupdate-Branch in site.conf temporär auf 'test' gesetzt 
-- Auto-MTU startet 'fastd' nicht neu -> MTU wird erst nach Reboot übernommen
+- Package ffffm-autoupdater-use-site-conf-branch eingebunden (FFM-Eigenentwicklung)
+- site.conf: 'Autoupdate-Branch' temporär auf 'test' gesetzt 
+- Auto-MTU: Wegen x86-Problemen wird jetzt eine neu erkannte MTU erst nach einem Reboot übernommen
 
 #### Known Issues
 - opkg-Pfade sind noch IPv4
