@@ -35,6 +35,7 @@ GLUON_SITE_PACKAGES := \
     ffffm-disable-80211b \
     ffffm-enlarge-dns-cache \
     iputils-ping \
+    mmfd \
 
 
 # wahrscheinlich nicht sinnvoll weil unsupported
