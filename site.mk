@@ -2,7 +2,6 @@ GLUON_SITE_PACKAGES := \
  	gluon-mesh-babel \
 	ffffm-keep-radio-channel \
 	ffffm-autoupdater-use-site-conf-branch \
-	gluon-next-node \
 	gluon-radvd \
 	gluon-client-bridge \
 	iwinfo \
@@ -21,7 +20,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
 	gluon-luci-node-role \
-	gluon-status-page \
 	gluon-l3roamd \
 	gluon-luci-portconfig \
 	gluon-mesh-vpn-fastd \
@@ -30,24 +28,32 @@ GLUON_SITE_PACKAGES := \
 	ffffm-fastd-auto-mtu \
 	ffffm-banner \
 	ffffm-fastd-auto-mtu \
-    ffffm-additional-wifi-json-info \
-    ffffm-ath9k-broken-wifi-workaround \
-    ffffm-disable-80211b \
-    ffffm-enlarge-dns-cache \
-    iputils-ping \
+	ffffm-additional-wifi-json-info \
+	ffffm-ath9k-broken-wifi-workaround \
+	ffffm-disable-80211b \
+	ffffm-enlarge-dns-cache \
+	iputils-ping \
+   tcpdump-mini \
+   strace \
+
+
 
 
 # wahrscheinlich nicht sinnvoll weil unsupported
 #	ffffm-luci-switchconfig \
 
-
-# abh von fastd
+# batman-spezifische Teile ausbauen:
+#	gluon-status-page \
 
 
 # brauchen wir wohl mit babel nicht mehr
-#	gluon-ebtables-filter-multicast \
 #	gluon-ebtables-filter-ra-dhcp \
-
+# 	gluon-next-node \
+#	gluon-ebtables-filter-multicast \
+#
+#
+# wer weiß ob wir das nochmal brauchen? vielleicht für stats in einem
+# babel-netz...
 #	gluon-ffmcollectdconfig \
 #	collectd5 \
 #	collectd-mod-ping \
