@@ -25,12 +25,9 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-fastd \
 	gluon-config-mode-mesh-vpn \
 	gluon-luci-mesh-vpn-fastd \
-	ffffm-fastd-auto-mtu \
 	ffffm-banner \
 	ffffm-fastd-auto-mtu \
 	ffffm-additional-wifi-json-info \
-	ffffm-ath9k-broken-wifi-workaround \
-	ffffm-disable-80211b \
 	ffffm-enlarge-dns-cache \
 	iputils-ping \
    tcpdump-mini \
@@ -44,6 +41,7 @@ GLUON_SITE_PACKAGES := \
 
 # batman-spezifische Teile ausbauen:
 #	gluon-status-page \
+#	ffffm-ath9k-broken-wifi-workaround \
 
 
 # brauchen wir wohl mit babel nicht mehr
