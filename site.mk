@@ -30,8 +30,7 @@ GLUON_SITE_PACKAGES := \
 	ffffm-additional-wifi-json-info \
 	ffffm-enlarge-dns-cache \
 	iputils-ping \
-   tcpdump-mini \
-   strace \
+   	strace \
 
 
 
