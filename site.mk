@@ -3,13 +3,13 @@ GLUON_SITE_PACKAGES := \
 	ffffm-keep-radio-channel \
 	ffffm-autoupdater-use-site-conf-branch \
 	gluon-radvd \
-	gluon-client-bridge \
 	iwinfo \
 	iptables \
 	haveged \
 	gluon-respondd \
 	gluon-autoupdater \
 	gluon-setup-mode \
+	gluon-client-bridge-babel \
 	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-hostname \
@@ -48,6 +48,7 @@ GLUON_SITE_PACKAGES := \
 #	gluon-ebtables-filter-ra-dhcp \
 # 	gluon-next-node \
 #	gluon-ebtables-filter-multicast \
+#	batmanspezifisch: gluon-client-bridge \
 #
 #
 # wer weiß ob wir das nochmal brauchen? vielleicht für stats in einem
