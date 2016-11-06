@@ -26,13 +26,14 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-luci-mesh-vpn-fastd \
 	ffffm-banner \
-	ffffm-fastd-auto-mtu \
 	ffffm-additional-wifi-json-info \
 	ffffm-enlarge-dns-cache \
 	iputils-ping \
    	strace \
 
 
+# einbauen wenn alels fertig ist
+	# ffffm-fastd-auto-mtu \
 
 
 # wahrscheinlich nicht sinnvoll weil unsupported
