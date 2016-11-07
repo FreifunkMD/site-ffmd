@@ -44,13 +44,6 @@ GLUON_SITE_PACKAGES := \
 #	ffffm-ath9k-broken-wifi-workaround \
 
 
-# brauchen wir wohl mit babel nicht mehr
-#	gluon-ebtables-filter-ra-dhcp \
-# 	gluon-next-node \
-#	gluon-ebtables-filter-multicast \
-#	batmanspezifisch: gluon-client-bridge \
-#
-#
 # wer weiß ob wir das nochmal brauchen? vielleicht für stats in einem
 # babel-netz...
 #	gluon-ffmcollectdconfig \
