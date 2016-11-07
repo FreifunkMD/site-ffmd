@@ -27,7 +27,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-mesh-vpn-fastd \
 	ffffm-banner \
 	ffffm-additional-wifi-json-info \
-	ffffm-enlarge-dns-cache \
+	ffffm-dns-cache \
 	iputils-ping \
    	strace \
 
