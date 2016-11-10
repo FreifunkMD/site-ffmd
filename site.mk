@@ -28,13 +28,11 @@ GLUON_SITE_PACKAGES := \
 	ffffm-banner \
 	ffffm-additional-wifi-json-info \
 	ffffm-dns-cache \
-	iputils-ping \
    	strace \
 
 
 # einbauen wenn alels fertig ist
 	# ffffm-fastd-auto-mtu \
-
 
 # wahrscheinlich nicht sinnvoll weil unsupported
 #	ffffm-luci-switchconfig \
