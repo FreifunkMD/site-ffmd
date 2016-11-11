@@ -31,7 +31,7 @@ GLUON_SITE_PACKAGES := \
    	strace \
 
 
-# einbauen wenn alels fertig ist
+# ggf. einbauen wenn alles fertig ist
 	# ffffm-fastd-auto-mtu \
 
 # wahrscheinlich nicht sinnvoll weil unsupported
@@ -55,6 +55,21 @@ GLUON_SITE_PACKAGES := \
 #	collectd-mod-memory \
 #	gluon-ffmautokey \
 
+ifeq ($(GLUON_TARGET),x86-x64)
+# support the usb stack on x86 devices
+# and add a few common USB NICs
+GLUON_SITE_PACKAGES += \
+	kmod-usb-core \
+	kmod-usb2 \
+	kmod-usb-hid \
+	kmod-usb-net \
+	kmod-usb-net-asix \
+	kmod-usb-net-dm9601-ether
+	libnl \
+	kmod-mac80211 \
+	kmod-lib80211 \
+	tcpdump 
+endif
 
 #####################################################################################################################
 
