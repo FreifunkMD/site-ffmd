@@ -29,6 +29,7 @@ GLUON_SITE_PACKAGES := \
 	ffffm-additional-wifi-json-info \
 	ffffm-dns-cache \
    	strace \
+	libpcap
 
 
 # ggf. einbauen wenn alles fertig ist
@@ -55,7 +56,7 @@ GLUON_SITE_PACKAGES := \
 #	collectd-mod-memory \
 #	gluon-ffmautokey \
 
-ifeq ($(GLUON_TARGET),x86-x64)
+ifeq ($(GLUON_TARGET),x86-64)
 # support the usb stack on x86 devices
 # and add a few common USB NICs
 GLUON_SITE_PACKAGES += \
@@ -64,10 +65,9 @@ GLUON_SITE_PACKAGES += \
 	kmod-usb-hid \
 	kmod-usb-net \
 	kmod-usb-net-asix \
-	kmod-usb-net-dm9601-ether
-	libnl \
-	kmod-mac80211 \
+	kmod-usb-net-dm9601-ether \
 	kmod-lib80211 \
+	libnl \
 	tcpdump 
 endif
 
