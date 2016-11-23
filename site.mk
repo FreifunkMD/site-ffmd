@@ -66,7 +66,7 @@ GLUON_SITE_PACKAGES += \
 	kmod-usb-net \
 	kmod-usb-net-asix \
 	kmod-usb-net-dm9601-ether \
-	kmod-lib80211 \
+	kmod-cfg80211 \
 	libnl \
 	tcpdump 
 endif
@@ -93,3 +93,9 @@ GLUON_BRANCH ?= dev
 
 # Languages to include
 GLUON_LANGS ?= en de
+
+# region information for regulatory compliance
+GLUON_REGION ?= eu
+
+# Prefer ath10k firmware with 802.11s support
+GLUON_ATH10K_MESH ?= 11s
