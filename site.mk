@@ -9,7 +9,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-respondd \
 	gluon-autoupdater \
 	gluon-setup-mode \
-	gluon-client-bridge-babel \
+	gluon-client-bridge \
 	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-hostname \
