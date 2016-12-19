@@ -55,7 +55,7 @@ Changelog
 * 0.38: *gluon 2016.2.2*
   * see
     * https://gluon.readthedocs.io/en/v2016.2.2/releases/v2016.1.6.html
-    * hhttps://gluon.readthedocs.io/en/v2016.2.2/releases/v2016.2.html
+    * https://gluon.readthedocs.io/en/v2016.2.2/releases/v2016.2.html
     * https://gluon.readthedocs.io/en/v2016.2.2/releases/v2016.2.1.html
     * https://gluon.readthedocs.io/en/v2016.2.2/releases/v2016.2.2.html
 * 0.37: *gluon 2016.1.5*
