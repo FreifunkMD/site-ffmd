@@ -27,7 +27,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-mesh-vpn-fastd \
 	ffffm-banner \
 	ffffm-additional-wifi-json-info \
-	gluon-dns-cache \
+	gluon-dns-config \
    	strace \
 	libpcap
 
