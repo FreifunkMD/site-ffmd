@@ -1,5 +1,5 @@
 GLUON_SITE_PACKAGES := \
- 	gluon-mesh-babel \
+	gluon-mesh-babel \
 	ffffm-keep-radio-channel \
 	ffffm-autoupdater-use-site-conf-branch \
 	gluon-radvd \
@@ -19,7 +19,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-autoupdater \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
-	gluon-luci-node-role \
 	gluon-l3roamd \
 	gluon-luci-portconfig \
 	gluon-mesh-vpn-fastd \
@@ -31,6 +30,8 @@ GLUON_SITE_PACKAGES := \
    	strace \
 	libpcap
 
+#	Wird nicht wirklich verwendet
+#	gluon-luci-node-role \
 
 # ggf. einbauen wenn alles fertig ist
 	# ffffm-fastd-auto-mtu \
