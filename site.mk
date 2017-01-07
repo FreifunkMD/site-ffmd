@@ -24,6 +24,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-fastd \
 	gluon-config-mode-mesh-vpn \
 	gluon-luci-mesh-vpn-fastd \
+	gluon-status-page \
 	ffffm-banner \
 	ffffm-additional-wifi-json-info \
 	gluon-dns-config \
@@ -40,7 +41,6 @@ GLUON_SITE_PACKAGES := \
 #	ffffm-luci-switchconfig \
 
 # batman-spezifische Teile ausbauen:
-#	gluon-status-page \
 #	ffffm-ath9k-broken-wifi-workaround \
 
 
