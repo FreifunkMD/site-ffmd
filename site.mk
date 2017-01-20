@@ -1,7 +1,5 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-babel \
-	ffffm-keep-radio-channel \
-	ffffm-autoupdater-use-site-conf-branch \
 	gluon-radvd \
 	iwinfo \
 	iptables \
@@ -25,37 +23,21 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-luci-mesh-vpn-fastd \
 	gluon-status-page \
-	ffffm-banner \
-	ffffm-additional-wifi-json-info \
-	gluon-dns-config \
    	strace \
 	libpcap
 
-#	Wird nicht wirklich verwendet
-#	gluon-luci-node-role \
+# lede-wechsel, da ist paketumbau erforderlich und die folgenden Pakete haben diesen Umbau noch nicht erfahren:
+#ffffm-keep-radio-channel \
+#	ffffm-autoupdater-use-site-conf-branch \
+#	ffffm-banner \
+#	ffffm-additional-wifi-json-info \
+#
 
 # ggf. einbauen wenn alles fertig ist
 	# ffffm-fastd-auto-mtu \
 
-# wahrscheinlich nicht sinnvoll weil unsupported
-#	ffffm-luci-switchconfig \
-
 # batman-spezifische Teile ausbauen:
 #	ffffm-ath9k-broken-wifi-workaround \
-
-
-# wer weiß ob wir das nochmal brauchen? vielleicht für stats in einem
-# babel-netz...
-#	gluon-ffmcollectdconfig \
-#	collectd5 \
-#	collectd-mod-ping \
-#	collectd-mod-interface \
-#	collectd-mod-cpu \
-#	collectd-mod-network \
-#	collectd-mod-iwinfo \
-#	collectd-mod-load \
-#	collectd-mod-memory \
-#	gluon-ffmautokey \
 
 ifeq ($(GLUON_TARGET),x86-64)
 # support the usb stack on x86 devices
