@@ -51,6 +51,7 @@ GLUON_SITE_PACKAGES += \
 	kmod-usb-net-dm9601-ether \
 	kmod-cfg80211 \
 	libnl \
+	gdb \
 	tcpdump 
 endif
 
