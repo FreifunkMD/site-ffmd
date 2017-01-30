@@ -1,9 +1,9 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-babel \
 	gluon-radvd \
+	haveged \
 	iwinfo \
 	iptables \
-	haveged \
 	gluon-respondd \
 	gluon-autoupdater \
 	gluon-setup-mode \
@@ -39,10 +39,17 @@ GLUON_SITE_PACKAGES := \
 # batman-spezifische Teile ausbauen:
 #	ffffm-ath9k-broken-wifi-workaround \
 
+ifeq ($(GLUON_TARGET),ar71xx-tiny)
+# save some space to build ar71xx-tiny package even with strace and libpcap
+GLUON_SITE_PACKAGES += -haveged
+GLUON_SITE_PACKAGES += -libpcap
+endif
+
 ifeq ($(GLUON_TARGET),x86-64)
 # support the usb stack on x86 devices
 # and add a few common USB NICs
 GLUON_SITE_PACKAGES += \
+	haveged \
 	kmod-usb-core \
 	kmod-usb2 \
 	kmod-usb-hid \
@@ -52,6 +59,7 @@ GLUON_SITE_PACKAGES += \
 	kmod-cfg80211 \
 	libnl \
 	gdb \
+	iftop \
 	tcpdump 
 endif
 
