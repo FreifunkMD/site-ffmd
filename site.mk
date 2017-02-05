@@ -49,7 +49,6 @@ ifeq ($(GLUON_TARGET),x86-64)
 # support the usb stack on x86 devices
 # and add a few common USB NICs
 GLUON_SITE_PACKAGES += \
-	haveged \
 	kmod-usb-core \
 	kmod-usb2 \
 	kmod-usb-hid \
