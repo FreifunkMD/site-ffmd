@@ -25,7 +25,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
    	strace \
 	libpcap
-
+# libpcap wird für tcpdump benötigt. gemeinsam mit strace sind das Pakete, die nicht für den Betrieb relevant sind.
+#
 # lede-wechsel, da ist paketumbau erforderlich und die folgenden Pakete haben diesen Umbau noch nicht erfahren:
 #ffffm-keep-radio-channel \
 #	ffffm-autoupdater-use-site-conf-branch \
@@ -48,6 +49,7 @@ endif
 ifeq ($(GLUON_TARGET),x86-64)
 # support the usb stack on x86 devices
 # and add a few common USB NICs
+DEBUG := 1
 GLUON_SITE_PACKAGES += \
 	kmod-usb-core \
 	kmod-usb2 \
@@ -58,6 +60,7 @@ GLUON_SITE_PACKAGES += \
 	kmod-cfg80211 \
 	libnl \
 	gdb \
+	valgrind \
 	iftop \
 	tcpdump 
 endif
@@ -77,7 +80,7 @@ DEFAULT_GLUON_RELEASE := $(DEFAULT_GLUON_RELEASE)-$(shell date '+%Y.%m.%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Development branch information
-GLUON_BRANCH ?= dev
+GLUON_BRANCH ?= babel
 
 # Default priority for updates.
 # GLUON_PRIORITY ?= 0
