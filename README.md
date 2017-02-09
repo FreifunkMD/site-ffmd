@@ -1,6 +1,13 @@
 ## Frankfurter Babel-Development Version 
 
 ### v0.0.0.7-n_babel-work
+- alle Memleaks des babel-respondd-Moduls sind behoben.
+
+#### Known issues
+- mmfd sieht keine neighbours, wenn er von procd gestartet wurde. Wenn er
+  interaktiv gestartet wird geht es.
+
+### v0.0.0.7-n_babel-work
 - gebaut am 5.2.2017
 - Die Statuspage ist enthalten
 - gluon-dns-cache wurde entfernt, rebase auf Master, die Funktionalität ist in
