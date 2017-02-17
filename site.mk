@@ -42,7 +42,6 @@ GLUON_SITE_PACKAGES := \
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 # save some space to build ar71xx-tiny package even with strace and libpcap
-GLUON_SITE_PACKAGES += -haveged
 GLUON_SITE_PACKAGES += -libpcap
 endif
 
