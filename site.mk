@@ -13,15 +13,14 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-hostname \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-private-wifi \
-	gluon-luci-wifi-config \
+	gluon-web-admin \
+	gluon-web-autoupdater \
+	gluon-web-private-wifi \
+	gluon-web-wifi-config \
 	gluon-l3roamd \
-	gluon-luci-portconfig \
 	gluon-mesh-vpn-fastd \
 	gluon-config-mode-mesh-vpn \
-	gluon-luci-mesh-vpn-fastd \
+	gluon-web-mesh-vpn-fastd \
 	gluon-status-page \
    	strace \
 	libpcap
