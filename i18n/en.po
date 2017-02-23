@@ -20,7 +20,7 @@ msgstr ""
 
 msgid "gluon-config-mode:reboot"
 msgstr ""
-"<p>The node is currently rebooting.<br>"
+"<p>The node is currently rebooting.<br />"
 "Your can find lots of information on the Freifunk Frankfurt community on "
 "<a href=\"http://ffm.freifunk.net/\">our homepage</a>.</p>"
 "<p>To get back to this configuration interface, you have to press the reset button for "
