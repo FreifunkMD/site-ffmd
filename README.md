@@ -1,5 +1,13 @@
 ## Frankfurter Babel-Development Version 
 
+### v0.0.1.3-n_babel-work
+- Fix: Statuspage nutzt nun nicht mehr die next-node-IP und zeigt dadurch die
+  Daten des Nodes an den man  sehen will und nicht vom next-node
+- die Anzahl der Clients wird nun über einen neu in l3roamd eingeführten Socket
+  ermittelt. Dadurch dürfte die Zahl besser stimmen.
+- Die für das mesh-vpn freigeschalteten Ports werden aus der site.conf
+  ermittelt und nicht mehr geraten.
+
 ### v0.0.1.2-n_babel-work
 - Upgrade auf gluon-web
 - Verschieben von mmfd-upgrade-script von mmfd-Paket nach gluon-mesh-babel
