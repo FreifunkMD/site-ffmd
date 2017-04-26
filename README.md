@@ -1,5 +1,10 @@
 ## Frankfurter Babel-Development Version 
 
+## v0.0.1.4-n_babel-work
+- Fix: respondd-Segfault
+- Der nexthop zum nächsten Gateway wurde in die statistics von respondd
+  aufgenommen
+
 ### v0.0.1.3-n_babel-work
 - Fix: Statuspage nutzt nun nicht mehr die next-node-IP und zeigt dadurch die
   Daten des Nodes an den man  sehen will und nicht vom next-node
