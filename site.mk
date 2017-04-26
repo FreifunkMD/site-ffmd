@@ -48,7 +48,7 @@ endif
 ifeq ($(GLUON_TARGET),x86-64)
 # support the usb stack on x86 devices
 # and add a few common USB NICs
-DEBUG := 1
+GLUON_DEBUG := 1
 GLUON_SITE_PACKAGES += \
 	kmod-usb-core \
 	kmod-usb2 \
