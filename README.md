@@ -1,5 +1,8 @@
 ## Frankfurter Babel-Development Version 
 
+#v0.0.1.5-n_babel-work
+- Fix: babel-respondd-memleak
+
 ## v0.0.1.4-n_babel-work
 - Fix: respondd-Segfault
 - Der nexthop zum nächsten Gateway wurde in die statistics von respondd
