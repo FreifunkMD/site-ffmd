@@ -4,6 +4,7 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo \
 	iptables \
+	ip \
 	gluon-respondd \
 	gluon-autoupdater \
 	gluon-setup-mode \
