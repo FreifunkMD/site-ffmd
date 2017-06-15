@@ -4,13 +4,14 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo \
 	iptables \
-	ip \
 	gluon-respondd \
 	gluon-autoupdater \
 	gluon-setup-mode \
 	gluon-client-bridge \
 	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
+	prefixd \
+	gluon-web-prefixd \
 	gluon-config-mode-hostname \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
@@ -22,11 +23,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-fastd \
 	gluon-config-mode-mesh-vpn \
 	gluon-web-mesh-vpn-fastd \
-	gluon-status-page \
-   	strace \
-	libpcap
-# libpcap wird für tcpdump benötigt. gemeinsam mit strace sind das Pakete, die nicht für den Betrieb relevant sind.
-#
+	gluon-status-page
+
 # lede-wechsel, da ist paketumbau erforderlich und die folgenden Pakete haben diesen Umbau noch nicht erfahren:
 #ffffm-keep-radio-channel \
 #	ffffm-autoupdater-use-site-conf-branch \
@@ -34,14 +32,11 @@ GLUON_SITE_PACKAGES := \
 #	ffffm-additional-wifi-json-info \
 #
 
-# ggf. einbauen wenn alles fertig ist
-	# ffffm-fastd-auto-mtu \
-
 # batman-spezifische Teile ausbauen:
 #	ffffm-ath9k-broken-wifi-workaround \
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
-# save some space to build ar71xx-tiny package even with strace and libpcap
+# save some space to build ar71xx-tiny package
 GLUON_SITE_PACKAGES += -libpcap
 GLUON_SITE_PACKAGES += -strace
 endif
@@ -62,7 +57,8 @@ GLUON_SITE_PACKAGES += \
 	gdb \
 	valgrind \
 	iftop \
-	tcpdump 
+	tcpdump \
+	strace
 endif
 
 #####################################################################################################################
