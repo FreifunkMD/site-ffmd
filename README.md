@@ -1,5 +1,13 @@
 ## Frankfurter Babel-Development Version 
 
+#v.0.0.1.6-n_babel-work
+- Einbau eines Proof-of-Concept für prefixd inklusive gluon-web-Modul für die
+  Einrichtung
+- Aktualisierung auf gluon master post 2017.1
+- Einführung von Source-specific routing
+- Fix: Firewall-Anpassungen für Trafficweiterleitung im Mesh
+- Fix: Entfernung von Syntaxfehlern der babel-Konfiguration
+
 #v0.0.1.5-n_babel-work
 - Fix: babel-respondd-memleak
 
