@@ -1,5 +1,9 @@
 ## Frankfurter Babel-Development Version 
 
+#v0.0.1.7-n_babel-work
+- Upstream-DNS Server werden über netzinterne Routen erreicht, auch wenn am
+  WAN-Port IPv6 anliegt.
+
 #v.0.0.1.6-n_babel-work
 - Einbau eines Proof-of-Concept für prefixd inklusive gluon-web-Modul für die
   Einrichtung
