@@ -1,5 +1,9 @@
 ## Frankfurter Babel-Development Version 
 
+#v0.0.1.8-n_babel-work
+- Fix für firewall rules für respondd in mesh-zone: erlaube Pakete von
+  fe80::/64, verhindere ÜBerschreiben von rules durch gleichen Namen
+
 #v0.0.1.7-n_babel-work
 - Upstream-DNS Server werden über netzinterne Routen erreicht, auch wenn am
   WAN-Port IPv6 anliegt.
