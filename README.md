@@ -2,7 +2,10 @@
 
 #v0.0.1.8-n_babel-work
 - Fix für firewall rules für respondd in mesh-zone: erlaube Pakete von
-  fe80::/64, verhindere ÜBerschreiben von rules durch gleichen Namen
+  fe80::/64, verhindere Überschreiben von rules durch gleichen Namen
+- Abschaffung der spezielen routing-tables 10,11,12, Nutzung der Main-Table
+- mmfd version bump, fix memleak
+- enthält ein erstes ubus-Testprogramm
 
 #v0.0.1.7-n_babel-work
 - Upstream-DNS Server werden über netzinterne Routen erreicht, auch wenn am
