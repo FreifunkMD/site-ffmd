@@ -5,6 +5,7 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	ip-tiny \
+	ip-bridge \
 	gluon-respondd \
 	gluon-autoupdater \
 	gluon-setup-mode \
@@ -57,6 +58,7 @@ GLUON_SITE_PACKAGES += \
 	libnl \
 	gdb \
 	valgrind \
+	screen \
 	iftop \
 	tcpdump \
 	strace
