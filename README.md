@@ -6,6 +6,7 @@
 - Abschaffung der spezielen routing-tables 10,11,12, Nutzung der Main-Table
 - mmfd version bump, fix memleak
 - enthält ein erstes ubus-Testprogramm
+- Respondd-Anpassungen: Aufnahme von Mesh-Nachbarn
 
 #v0.0.1.7-n_babel-work
 - Upstream-DNS Server werden über netzinterne Routen erreicht, auch wenn am
