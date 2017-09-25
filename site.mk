@@ -58,6 +58,7 @@ GLUON_SITE_PACKAGES += \
 	valgrind \
 	iftop \
 	tcpdump \
+	binutils \
 	strace
 endif
 
