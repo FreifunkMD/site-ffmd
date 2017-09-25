@@ -10,7 +10,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-client-bridge \
 	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
-	prefixd \
 	gluon-web-prefixd \
 	gluon-config-mode-hostname \
 	gluon-config-mode-geo-location \
@@ -24,6 +23,10 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-web-mesh-vpn-fastd \
 	gluon-status-page
+#	prefixd benötigt diese Pakete. bauen wir erstmal nicht weiter ein
+#	ip-tiny \
+#	ip-bridge \
+#	prefixd
 
 # lede-wechsel, da ist paketumbau erforderlich und die folgenden Pakete haben diesen Umbau noch nicht erfahren:
 #ffffm-keep-radio-channel \
@@ -56,6 +59,7 @@ GLUON_SITE_PACKAGES += \
 	libnl \
 	gdb \
 	valgrind \
+	screen \
 	iftop \
 	tcpdump \
 	binutils \
