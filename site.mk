@@ -27,7 +27,7 @@ GLUON_SITE_PACKAGES := \
 	prefixd
 
 # lede-wechsel, da ist paketumbau erforderlich und die folgenden Pakete haben diesen Umbau noch nicht erfahren:
-#ffffm-keep-radio-channel \
+#	ffffm-keep-radio-channel \
 #	ffffm-autoupdater-use-site-conf-branch \
 #	ffffm-additional-wifi-json-info \
 #
