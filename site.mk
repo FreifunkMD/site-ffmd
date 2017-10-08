@@ -23,12 +23,12 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-web-mesh-vpn-fastd \
 	gluon-status-page \
-	ffffm-keep-radio-channel \
 	ffffm-banner \
+	ffffm-keep-radio-channel \
+	ffffm-autoupdater-use-site-conf-branch \
 	prefixd
 
 # lede-wechsel, da ist paketumbau erforderlich und die folgenden Pakete haben diesen Umbau noch nicht erfahren:
-#	ffffm-autoupdater-use-site-conf-branch \
 #	ffffm-additional-wifi-json-info \
 #
 
