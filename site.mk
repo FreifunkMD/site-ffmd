@@ -33,7 +33,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo
 
-DEFAULT_GLUON_CHECKOUT := v2016.1.5
+DEFAULT_GLUON_CHECKOUT := v2016.2.7
 
 # Allow overriding the checkout from the command line
 GLUON_CHECKOUT ?= $(DEFAULT_GLUON_CHECKOUT)
@@ -70,4 +70,7 @@ GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 GLUON_PRIORITY ?= 0
 
 # Languages to include
+GLUON_REGION ?= eu
 GLUON_LANGS ?= en de
+
+GLUON_ATH10K_MESH=ibss
