@@ -25,8 +25,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	ffffm-banner \
 	ffffm-keep-radio-channel \
-	prefixd \
-	libndp
+	prefixd
 
 # ffffm-autoupdater-use-site-conf-branch \
 
@@ -55,7 +54,6 @@ GLUON_SITE_PACKAGES += \
 	iftop \
 	tcpdump \
 	binutils \
-	libndp \
 	strace
 endif
 
