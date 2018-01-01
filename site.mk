@@ -25,7 +25,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	ffffm-banner \
 	ffffm-keep-radio-channel \
-	iproute2 \
+	ip-tiny \
 	gluon-iptables-clamp-mss-to-pmtu
 
 # ffffm-autoupdater-use-site-conf-branch \
