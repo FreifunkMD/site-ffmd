@@ -26,6 +26,7 @@ GLUON_SITE_PACKAGES := \
 	ffffm-banner \
 	ffffm-keep-radio-channel \
 	smcroute \
+	ip-full \
 	gluon-iptables-clamp-mss-to-pmtu
 
 # ffffm-autoupdater-use-site-conf-branch \
@@ -41,7 +42,6 @@ ifeq ($(GLUON_TARGET),x86-64)
 # and add a few common USB NICs
 GLUON_DEBUG := 1
 GLUON_SITE_PACKAGES += \
-	ip-tiny \
 	kmod-usb-core \
 	kmod-usb2 \
 	kmod-usb-hid \
