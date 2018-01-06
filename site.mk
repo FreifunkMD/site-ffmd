@@ -27,6 +27,8 @@ GLUON_SITE_PACKAGES := \
 	ffffm-keep-radio-channel \
 	smcroute \
 	prefixd \
+	tcpdump \
+	ffffm-autoupdater-use-site-conf-branch \
 	gluon-iptables-clamp-mss-to-pmtu
 
 # ffffm-autoupdater-use-site-conf-branch \
@@ -34,6 +36,7 @@ GLUON_SITE_PACKAGES := \
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 # save some space to build ar71xx-tiny package
 GLUON_SITE_PACKAGES += -libpcap
+GLUON_SITE_PACKAGES += -tcpdump
 GLUON_SITE_PACKAGES += -strace
 endif
 
