@@ -59,6 +59,7 @@ GLUON_SITE_PACKAGES += \
 	iftop \
 	tcpdump \
 	binutils \
+	464xlat \
 	strace
 endif
 
@@ -67,7 +68,7 @@ endif
 # This is the Dev branch
 
 # Gluon Base Release
-DEFAULT_GLUON_RELEASE := Homebrew-babel
+DEFAULT_GLUON_RELEASE := master_babel
 
 # For homebrew development add e.g. date and time 
 # (Note: Don't use the ':' char. It will break the build)
