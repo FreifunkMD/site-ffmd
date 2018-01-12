@@ -29,6 +29,7 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	tcpdump \
 	ffffm-autoupdater-use-site-conf-branch \
+	socat \
 	gluon-iptables-clamp-mss-to-pmtu
 
 # ffffm-autoupdater-use-site-conf-branch \
