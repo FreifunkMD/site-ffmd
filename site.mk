@@ -29,6 +29,7 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	tcpdump \
 	ffffm-autoupdater-use-site-conf-branch \
+	464xlat \
 	socat \
 	gluon-iptables-clamp-mss-to-pmtu
 
@@ -60,7 +61,6 @@ GLUON_SITE_PACKAGES += \
 	iftop \
 	tcpdump \
 	binutils \
-	464xlat \
 	strace
 endif
 
