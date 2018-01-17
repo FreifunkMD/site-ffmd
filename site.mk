@@ -31,6 +31,7 @@ GLUON_SITE_PACKAGES := \
 	464xlat \
 	strace \
 	socat \
+	nltrace \
 	gluon-iptables-clamp-mss-to-pmtu
 
 # ffffm-autoupdater-use-site-conf-branch \
