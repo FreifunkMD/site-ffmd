@@ -25,11 +25,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	ffffm-banner \
 	ffffm-keep-radio-channel \
-	smcroute \
 	prefixd \
 	tcpdump \
 	ffffm-autoupdater-use-site-conf-branch \
 	464xlat \
+	strace \
 	socat \
 	gluon-iptables-clamp-mss-to-pmtu
 
