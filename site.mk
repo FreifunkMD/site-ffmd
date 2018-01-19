@@ -18,6 +18,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-autoupdater \
 	gluon-web-private-wifi \
 	gluon-web-wifi-config \
+	gluon-web-network \
 	gluon-l3roamd \
 	gluon-mesh-vpn-fastd \
 	gluon-config-mode-mesh-vpn \
