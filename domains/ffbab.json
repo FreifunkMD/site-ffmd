@@ -1,0 +1,104 @@
+{
+	domain_names = { ffbab = 'Babel Testnetz' },
+	domain_seed = 'c44847de5a93131b674af3ce5f24b667b6923b35effd79f6e5ec827819934eb4',
+	hide_domain = true,
+
+	opkg = {
+		openwrt = 'http://downloads.openwrt.org/%n/%v/%S/packages',
+		extra = {
+			modules = 'http://firmware.services.ffffm.net/babel-dev/sysupgrade/modules/gluon-%GS-%GR/%S',
+		},
+	},
+
+	prefix4 = '10.126.0.0/16',
+	prefix6 = '2a06:8187:fbab:2::/64', -- client-Netz
+	node_prefix6 = '2a06:8187:fbab:1::/64', -- infrastructure net for inter-node-communication und route-exchange
+
+	ntp_servers = {'ntp.services.ffffm.net'},
+
+	wifi24 = {
+		channel = 1,
+		htmode = 'HT20',
+		ap = {
+			ssid = 'babel.ffm.freifunk.net',
+			bssid = '02:0E:8E:1E:61:17',
+			mcast_rate = 12000,
+		},
+		mesh = {
+			id = '16:41:95:40:F7:DC',
+			mcast_rate = 12000,
+		},
+	},
+
+	dns = {
+		cacheentries = 5000,
+		servers = { '2a06:8187:fb56::1:56', '2a06:8187:fb57::1:57' , } ,
+	},
+
+	wifi5 = {
+		channel = 48,
+		htmode = 'HT40+',
+		ap = {
+			ssid = 'babel.ffm.freifunk.net',
+		},
+		mesh = {
+			id = '16:41:95:40:F7:DC',
+			bssid = '02:0E:8E:1E:61:17',
+			mcast_rate = 12000,
+		},
+	},
+
+
+	next_node = {
+		name = { 'nextnode.clients.babel.ffffm.net', 'nn', 'nextnode', 'next-node', 'nn.ffffm', 'nn.ffffm.net', 'nextnode.ffffm', 'next-node.ffffm', 'nextnode.ffffm.net', 'next-node.ffffm.net' },
+		ip4 = '10.126.0.1',
+		ip6 = '2a06:8187:fbab:2::1',
+		mac = '16:41:95:40:f7:dc',
+	},
+
+	mesh_vpn = {
+		mtu = 1374,
+		fastd = {
+			groups = {
+				backbone = {
+					limit = 2,
+					peers = {
+						babelgw01 = {
+							key = '051e2bdd95c5db48ec68795ae6d0c5d43e9ad8142a871c5dc38fb232e6f07ed2',
+							remotes = {'"gw01.babel.ffm.freifunk.net" port 10001', '"gw01.babel.ffffm.net" port 10001'},
+						},
+						babelgw02 = {
+							key = 'c58270997ae934e803e6b3a06c6455ac7246d80da9497645f79036bd95984bc8',
+							remotes = {'"gw02.babel.ffm.freifunk.net" port 10001' , '"gw02.babel.ffffm.net" port 10001'},
+						},
+						babelgw03 = {
+							key = '8ddb8282dbf6f04b66b0914ee054b8c211625179b0cadd469e58d0aaca24b8df',
+							remotes = {'"gw03.babel.ffm.freifunk.net" port 10001' , '"gw03.babel.ffffm.net" port 10001'},
+						},
+						babelgw04 = {
+							key = 'eb37bbcf5d32b25ba0db705d5c8d745df229ed7f6d083641decd2312747df69b',
+							remotes = {'"gw04.babel.ffm.freifunk.net" port 10001' , '"gw04.babel.ffffm.net" port 10001'},
+						},
+					},
+				},
+			},
+		},
+	},
+
+	autoupdater = {
+		enabled = 1,
+		branches = {
+			christf_next = {
+				mirrors = {
+					'http://firmware.services.ffffm.net/babel-dev/sysupgrade',
+				},
+				babelweekly = {
+					mirrors = {
+						'http://firmware.services.ffffm.net/babel-dev/sysupgrade',
+					},
+				},
+			},
+		},
+	},
+}
+-- vim: set ft=lua:ts=2:sw=2:et

@@ -74,6 +74,7 @@ endif
 #####################################################################################################################
 
 # This is the Dev branch
+GLUON_MULTIDOMAIN=1
 
 # Gluon Base Release
 DEFAULT_GLUON_RELEASE := master_babel
