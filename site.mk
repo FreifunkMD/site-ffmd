@@ -71,3 +71,6 @@ GLUON_PRIORITY ?= 0
 
 # Languages to include
 GLUON_LANGS ?= en de
+
+# Changes v2016.1.x
+GLUON_REGION ?= eu
