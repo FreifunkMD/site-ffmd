@@ -14,6 +14,7 @@ print_usage() {
     echo '  -d  dirclean'
     echo '  -h  show this help'
     echo '  -v  verbose mode'
+    echo '  -j <numThreads> set number of threads'
     echo '  -y  answer all questions with yes'
 }
 
@@ -54,8 +55,8 @@ do
         -j)
             shift
             GCC_J=$1
-			shift
-			;;
+            shift
+            ;;
         --)
             shift; break;;
     esac
