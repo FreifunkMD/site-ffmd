@@ -30,7 +30,6 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	tcpdump \
 	ffffm-autoupdater-use-site-conf-branch \
-	ffffm-button-bind \
 	jool \
 	strace \
 	socat \
