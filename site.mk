@@ -30,18 +30,14 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	tcpdump \
 	ffffm-autoupdater-use-site-conf-branch \
-	jool-tools \
-	kmod-jool-stateless \
+	jool-stateless \
+	jool-stateful \
 	socat \
 	gluon-iptables-clamp-mss-to-pmtu
 
-# nltrace does not exist yet
-#	nltrace \
-
-# ffffm-autoupdater-use-site-conf-branch \
-
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 # save some space to build ar71xx-tiny package
+GLUON_SITE_PACKAGES += -jool-stateful
 GLUON_SITE_PACKAGES += -libpcap
 GLUON_SITE_PACKAGES += -tcpdump
 GLUON_SITE_PACKAGES += -strace
