@@ -30,8 +30,8 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	tcpdump \
 	ffffm-autoupdater-use-site-conf-branch \
-	jool \
-	strace \
+	jool-tools \
+	kmod-jool-stateless \
 	socat \
 	gluon-iptables-clamp-mss-to-pmtu
 
@@ -42,8 +42,6 @@ GLUON_SITE_PACKAGES := \
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 # save some space to build ar71xx-tiny package
-GLUON_SITE_PACKAGES += 464xlat
-GLUON_SITE_PACKAGES += -jool
 GLUON_SITE_PACKAGES += -libpcap
 GLUON_SITE_PACKAGES += -tcpdump
 GLUON_SITE_PACKAGES += -strace
