@@ -29,11 +29,12 @@ GLUON_SITE_PACKAGES := \
 	respondd-module-airtime \
 	prefixd \
 	tcpdump \
-	ffffm-autoupdater-use-site-conf-branch \
 	jool-stateless \
 	jool-stateful \
 	socat \
 	gluon-iptables-clamp-mss-to-pmtu
+
+#	ffffm-autoupdater-use-site-conf-branch \
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 # save some space to build ar71xx-tiny package
