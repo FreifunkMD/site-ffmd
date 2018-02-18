@@ -29,6 +29,7 @@ GLUON_SITE_PACKAGES := \
 	respondd-module-airtime \
 	prefixd \
 	tcpdump \
+	kmod-nat46 \
 	jool-stateless \
 	jool-stateful \
 	socat \
@@ -38,7 +39,6 @@ GLUON_SITE_PACKAGES := \
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 # save some space to build ar71xx-tiny package
-GLUON_SITE_PACKAGES += 464xlat
 GLUON_SITE_PACKAGES += -jool-stateless
 GLUON_SITE_PACKAGES += -jool-stateful
 GLUON_SITE_PACKAGES += -libpcap
