@@ -4,6 +4,8 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo \
 	iptables \
+	babeldev \
+	gluon-xlat464-clat \
 	gluon-respondd \
 	gluon-autoupdater \
 	gluon-setup-mode \
@@ -30,8 +32,6 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	tcpdump \
 	kmod-nat46 \
-	jool-stateless \
-	jool-stateful \
 	socat \
 	gluon-iptables-clamp-mss-to-pmtu
 
