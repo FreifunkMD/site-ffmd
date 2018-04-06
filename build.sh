@@ -14,18 +14,24 @@ print_usage() {
     echo '  -d  dirclean'
     echo '  -h  show this help'
     echo '  -v  verbose mode'
+    echo '  -j <numThreads> set number of threads'
     echo '  -y  answer all questions with yes'
 }
 
 # command line options handling
 ALLYES='false'
-ARGS=$(getopt dhvy $*)
+ARGS=$(getopt dhvyj: $*)
 if [ $? -ne 0 ]
 then
     print_usage
     exit 2
 fi
 set -- $ARGS
+
+
+# Default
+GCC_J=4
+
 
 while true
 do
@@ -46,10 +52,17 @@ do
             ALLYES='true'
             shift
             ;;
+        -j)
+            shift
+            GCC_J=$1
+            shift
+            ;;
         --)
             shift; break;;
     esac
 done
+
+echo "Set GCC_J to $GCC_J"
 
 # set GLUON_BRANCH for manifest
 if [ -z "$1" ]
@@ -171,7 +184,10 @@ echo -e "OpenWRT release branch: \033[32m${NEW_OPENWRT_RELEASE}\033[0m"
 for target in ${NEW_TARGETS}
 do
     echo -e "Starting to build target \033[32m${target}\033[0m ..."
-    make GLUON_TARGET=${target} -j4 $VERBOSE
+
+
+    # We introduced a parameter for parallelisation
+    make GLUON_TARGET=${target} -j$GCC_J $VERBOSE
 done
 
 # finalize
