@@ -1,6 +1,6 @@
 GLUON_SITE_FEEDS='ffffmpackages christfopenwrt'
 PACKAGES_FFFFMPACKAGES_REPO=git://github.com/freifunk-ffm/packages.git
-PACKAGES_FFFFMPACKAGES_COMMIT=0eeb9183aeda99a7a80a932fe2523112ade217db
+PACKAGES_FFFFMPACKAGES_COMMIT=5088ae4db3edfb38ad5f385efd2856d4ec81c0c4
 PACKAGES_FFFFMPACKAGES_BRANCH=master
 
 PACKAGES_CHRISTFOPENWRT_REPO=https://github.com/christf/packages-2.git
