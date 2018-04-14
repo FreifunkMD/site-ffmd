@@ -23,7 +23,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-network \
 	gluon-l3roamd \
 	gluon-mesh-vpn-fastd \
-	gluon-config-mode-mesh-vpn \
 	gluon-web-mesh-vpn-fastd \
 	gluon-status-page \
 	ffffm-banner \
