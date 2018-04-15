@@ -116,7 +116,6 @@ UTIL_PACKAGES := \
 	socat \
 	libnl \
 	gdb \
-	valgrind \
 	screen \
 	iftop \
 	tcpdump \
