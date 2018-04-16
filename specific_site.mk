@@ -191,7 +191,8 @@ ifeq ($(GLUON_TARGET),x86-geode)
 	$(USB_SERIAL_PACKAGES) \
 	$(PCI_PACKAGES_NET) \
 	$(PCI_X86_PACKAGES) \
-	$(DEBUG_PACKAGES)
+	$(DEBUG_PACKAGES) \
+	-kmod-e1000e
 endif
 
 # mpc85xx-generic
