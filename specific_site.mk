@@ -185,6 +185,7 @@ endif
 # support the usb stack on x86-geode devices
 # and add a few common USB NICs
 ifeq ($(GLUON_TARGET),x86-geode)
+    GLUON_SITE_PACKAGES += \
 	$(MAIN_COMBO_PACKAGES) \
 	$(USB_KEYBOARD_PACKAGES) \
 	$(USB_SERIAL_PACKAGES) \
