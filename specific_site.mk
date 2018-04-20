@@ -119,7 +119,7 @@ DEBUG_PACKAGES := \
 	tcpdump \
 	libnl \
 	gdb \
-	valgrind \	
+	valgrind \
 	iftop \
 	binutils \
 	strace \
