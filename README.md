@@ -26,6 +26,14 @@ In order to get a more verbose output, e.g. in case of build errors, you can cal
 
 **Note** since gluon 2015.1 the firmware is built for multiple targets. Now you need at least 45 GB of free space!
 
+How To Build with Docker
+------------------------
+
+There is a prepared [Docker](https://www.docker.com/) image for building the FFMD firmware, which can be found in the [gluon-docker](https://github.com/FreifunkMD/gluon-docker) repository.
+
+Clone the repository and follow the instruction in the respective [README.md](https://github.com/FreifunkMD/gluon-docker/blob/master/README.md).
+
+
 Updating via SSH
 ----------------
 
