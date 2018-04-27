@@ -1,12 +1,10 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-babel \
+	gluon-l3roamd \
 	gluon-radvd \
-	haveged \
-	iwinfo \
-	iptables \
-	babeldev \
 	gluon-xlat464-clat \
 	gluon-respondd \
+	respondd-module-airtime \
 	gluon-autoupdater \
 	gluon-setup-mode \
 	gluon-client-bridge \
@@ -18,60 +16,39 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-contact-info \
 	gluon-web-admin \
 	gluon-web-autoupdater \
-	gluon-web-private-wifi \
 	gluon-web-wifi-config \
 	gluon-web-network \
-	gluon-l3roamd \
 	gluon-mesh-vpn-fastd \
 	gluon-web-mesh-vpn-fastd \
 	gluon-status-page \
+	gluon-iptables-clamp-mss-to-pmtu \
 	ffffm-banner \
 	ffffm-keep-radio-channel \
-	respondd-module-airtime \
+	ffffm-autoupdater-use-site-conf-branch \
 	prefixd \
-	tcpdump \
 	kmod-nat46 \
-	socat \
 	gluon-iptables-clamp-mss-to-pmtu
+	babeldev \
+	haveged \
+	iwinfo \
+	iptables \
+	socat
 
 # ffffm-autoupdater-use-site-conf-branch \
 
-ifeq ($(GLUON_TARGET),ar71xx-tiny)
-# save some space to build ar71xx-tiny package
-GLUON_SITE_PACKAGES += -libpcap
-GLUON_SITE_PACKAGES += -tcpdump
-GLUON_SITE_PACKAGES += -strace
-endif
+include $(GLUON_SITEDIR)/specific_site.mk 
+
 
 ifeq ($(GLUON_TARGET),x86-64)
-# support the usb stack on x86 devices
-# and add a few common USB NICs
 GLUON_DEBUG := 1
-GLUON_SITE_PACKAGES += \
-	kmod-usb-core \
-	kmod-usb2 \
-	kmod-usb-hid \
-	kmod-usb-net \
-	kmod-usb-net-asix \
-	kmod-usb-net-dm9601-ether \
-	kmod-cfg80211 \
-	libnl \
-	gdb \
-	valgrind \
-	screen \
-	iftop \
-	tcpdump \
-	binutils \
-	strace
 endif
 
 #####################################################################################################################
 
 # This is the Dev branch
-GLUON_MULTIDOMAIN=1
 
 # Gluon Base Release
-DEFAULT_GLUON_RELEASE := master_babel
+DEFAULT_GLUON_RELEASE := vHomebrew-babel-dev
 
 # For homebrew development add e.g. date and time 
 # (Note: Don't use the ':' char. It will break the build)
@@ -81,7 +58,7 @@ DEFAULT_GLUON_RELEASE := $(DEFAULT_GLUON_RELEASE)-$(shell date '+%Y.%m.%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Development branch information
-GLUON_BRANCH ?= babel
+GLUON_BRANCH ?= babel_dev
 
 # Default priority for updates.
 # GLUON_PRIORITY ?= 0
@@ -94,3 +71,6 @@ GLUON_REGION ?= eu
 
 # Prefer ath10k firmware with 802.11s support
 GLUON_ATH10K_MESH ?= 11s
+
+# Multidomain support
+GLUON_MULTIDOMAIN=1
