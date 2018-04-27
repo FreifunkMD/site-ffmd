@@ -72,6 +72,7 @@ Changelog
   * see https://gluon.readthedocs.io/en/v2016.2.7/releases/v2016.2.7.html
   * Added option for multithreading to build.sh
   * Added signing keys for Stefan Haun, Johann Wagner, and Franz Kuntke
+  * Removed signing keys of Andreas, and Bastinat0r
 * 0.37: *gluon 2016.1.5*
   * see https://gluon.readthedocs.io/en/v2016.1.5/releases/v2016.1.5.html
 * 0.36: *gluon 2016.1.4*
