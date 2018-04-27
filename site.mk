@@ -32,9 +32,9 @@ GLUON_SITE_PACKAGES := \
 	tcpdump \
 	kmod-nat46 \
 	socat \
-	ffffm-autoupdater-use-site-conf-branch \
 	gluon-iptables-clamp-mss-to-pmtu
 
+# ffffm-autoupdater-use-site-conf-branch \
 
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
 # save some space to build ar71xx-tiny package
