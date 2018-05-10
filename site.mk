@@ -2,6 +2,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-babel \
 	gluon-l3roamd \
 	gluon-radvd \
+	gluon-xlat464-clat \
 	gluon-respondd \
 	respondd-module-airtime \
 	gluon-autoupdater \
@@ -25,12 +26,12 @@ GLUON_SITE_PACKAGES := \
 	ffffm-keep-radio-channel \
 	ffffm-autoupdater-use-site-conf-branch \
 	prefixd \
+	kmod-nat46 \
 	gluon-iptables-clamp-mss-to-pmtu \
 	babeldev \
 	haveged \
 	iwinfo \
 	iptables \
-	ohybridproxy \
 	socat
 
 # ffffm-autoupdater-use-site-conf-branch \
