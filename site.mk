@@ -27,10 +27,11 @@ GLUON_SITE_PACKAGES := \
 	ffffm-autoupdater-use-site-conf-branch \
 	prefixd \
 	kmod-nat46 \
-	gluon-iptables-clamp-mss-to-pmtu \
 	babeldev \
 	haveged \
 	iwinfo \
+	ddhcpd \
+	-dnsmasq \
 	iptables \
 	socat
 
