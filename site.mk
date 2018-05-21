@@ -2,7 +2,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-babel \
 	gluon-l3roamd \
 	gluon-radvd \
-	gluon-xlat464-clat \
 	gluon-respondd \
 	respondd-module-airtime \
 	gluon-autoupdater \
@@ -10,7 +9,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-client-bridge \
 	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
-	gluon-web-prefixd \
 	gluon-config-mode-hostname \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
@@ -25,7 +23,6 @@ GLUON_SITE_PACKAGES := \
 	ffffm-banner \
 	ffffm-keep-radio-channel \
 	ffffm-autoupdater-use-site-conf-branch \
-	prefixd \
 	kmod-nat46 \
 	babeldev \
 	haveged \
