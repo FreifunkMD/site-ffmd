@@ -22,15 +22,13 @@ GLUON_SITE_PACKAGES := \
 	gluon-iptables-clamp-mss-to-pmtu \
 	ffffm-banner \
 	ffffm-keep-radio-channel \
-	ffffm-autoupdater-use-site-conf-branch \
 	kmod-nat46 \
 	babeldev \
 	haveged \
 	iwinfo \
 	ddhcpd \
-	-dnsmasq \
 	iptables \
-	socat
+	gluon-xlat464-clat
 
 # ffffm-autoupdater-use-site-conf-branch \
 
