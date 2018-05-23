@@ -27,6 +27,8 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo \
 	ddhcpd \
+	prefixd \
+	gluon-web-prefixd \
 	iptables \
 	gluon-xlat464-clat
 
