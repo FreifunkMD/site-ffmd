@@ -27,6 +27,7 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo \
 	ddhcpd \
+	gluon-ddhcpd \
 	prefixd \
 	gluon-web-prefixd \
 	iptables \
