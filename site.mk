@@ -28,11 +28,9 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	ddhcpd \
 	gluon-ddhcpd \
-	gdbserver \
 	prefixd \
 	gluon-web-prefixd \
 	iptables \
-	-dnsmasq \
 	gluon-xlat464-clat
 
 # ffffm-autoupdater-use-site-conf-branch \
@@ -41,6 +39,10 @@ include $(GLUON_SITEDIR)/specific_site.mk
 
 
 ifeq ($(GLUON_TARGET),x86-64)
+GLUON_DEBUG := 1
+endif
+
+ifeq ($(GLUON_TARGET),ar71xx-generic)
 GLUON_DEBUG := 1
 endif
 
