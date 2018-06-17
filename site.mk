@@ -28,9 +28,11 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	ddhcpd \
 	gluon-ddhcpd \
+	gdbserver \
 	prefixd \
 	gluon-web-prefixd \
 	iptables \
+	-dnsmasq \
 	gluon-xlat464-clat
 
 # ffffm-autoupdater-use-site-conf-branch \
