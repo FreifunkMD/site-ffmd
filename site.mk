@@ -42,10 +42,6 @@ ifeq ($(GLUON_TARGET),x86-64)
 GLUON_DEBUG := 1
 endif
 
-ifeq ($(GLUON_TARGET),ar71xx-generic)
-GLUON_DEBUG := 1
-endif
-
 #####################################################################################################################
 
 # This is the Dev branch
