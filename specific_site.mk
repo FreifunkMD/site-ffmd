@@ -113,7 +113,6 @@ PCI_X86_PACKAGES :=\
 UTIL_PACKAGES := \
 	nano \
 	iperf3 \
-	gdbserver \
 
 # Debug packages
 DEBUG_PACKAGES := \
