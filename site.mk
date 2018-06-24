@@ -31,6 +31,7 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	gluon-web-prefixd \
 	iptables \
+	gluon-web-logging \
 	gluon-xlat464-clat
 
 # ffffm-autoupdater-use-site-conf-branch \
