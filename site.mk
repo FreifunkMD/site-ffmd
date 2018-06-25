@@ -31,8 +31,10 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	gluon-web-prefixd \
 	iptables \
-	gluon-web-logging \
-	gluon-xlat464-clat
+	gluon-web-logging
+
+
+#	gluon-xlat464-clat    # route back from jool to clients does not exist,	(ipv4)-tcp connections break with this package when roaming
 
 # ffffm-autoupdater-use-site-conf-branch \
 
