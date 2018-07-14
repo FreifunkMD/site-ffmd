@@ -31,6 +31,7 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	gluon-web-prefixd \
 	iptables \
+	nodealert \
 	gluon-web-logging
 
 
