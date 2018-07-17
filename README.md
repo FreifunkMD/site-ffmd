@@ -24,7 +24,16 @@ In order to get a more verbose output, e.g. in case of build errors, you can cal
 
     ./site/build.sh -v
 
-**Note** since gluon 2015.1 the firmware is built for multiple targets. Now you need at least 45 GB of free space!
+The build script without any further arguments creates an `experimental` build.
+Add the arguments `beta` or `stable` to create builds for the respective branches.
+Any build other than experimental should be coordinated with the [FFMD community](http://md.freifunk.net).
+
+For more information on the build script arguments, call
+
+    .site/build.sh -h
+
+**Note:** Unless specified otherwise, the firmware is built for multiple targets.
+You need at least 50 GB of free space in the directories `output/` and `openwrt/build_dir/`!
 
 How To Build with Docker
 ------------------------
