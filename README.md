@@ -69,6 +69,8 @@ Verify a successful upgrade by
 
 Changelog
 ---------
+* 0.39: *gluon 2016.2.7*
+  * Added [ffmd-packages](https://github.com/FreifunkMD/ffmd-packages) repository to the packages repository. This allows easy integration of custom packages.
 * 0.38: *gluon 2016.2.7*
   * see https://gluon.readthedocs.io/en/v2016.1.6/releases/v2016.1.6.html
   * see https://gluon.readthedocs.io/en/v2016.2/releases/v2016.2.html
