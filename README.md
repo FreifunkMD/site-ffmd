@@ -24,7 +24,8 @@ In order to get a more verbose output, e.g. in case of build errors, you can cal
 
     ./site/build.sh -v
 
-**Note** since gluon 2015.1 the firmware is built for multiple targets. Now you need at least 45 GB of free space!
+**Note:** Unless specified otherwise, the firmware is built for multiple targets.
+You need at least 50 GB of free space in the directories `output/` and `openwrt/build_dir/`!
 
 How To Build with Docker
 ------------------------
