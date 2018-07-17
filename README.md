@@ -24,6 +24,10 @@ In order to get a more verbose output, e.g. in case of build errors, you can cal
 
     ./site/build.sh -v
 
+The build script without any further arguments creates an `experimental` build.
+Add the arguments `beta` or `stable` to create builds for the respective branches.
+Any build other than experimental should be coordinated with the [FFMD community](http://md.freifunk.net).
+
 **Note:** Unless specified otherwise, the firmware is built for multiple targets.
 You need at least 50 GB of free space in the directories `output/` and `openwrt/build_dir/`!
 
