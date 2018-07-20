@@ -1,0 +1,5 @@
+GLUON_SITE_FEEDS='ffmd'
+
+PACKAGES_FFMD_REPO=https://github.com/FreifunkMD/ffmd-packages.git
+PACKAGES_FFMD_COMMIT=58895b2949545d8c0839f1992b556acadb66cfc8
+PACKAGES_FFMD_BRANCH=master
