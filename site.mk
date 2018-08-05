@@ -3,7 +3,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-l3roamd \
 	gluon-radvd \
 	gluon-respondd \
-	respondd-module-airtime \
 	gluon-autoupdater \
 	gluon-setup-mode \
 	gluon-client-bridge \
@@ -33,6 +32,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	nodealert \
 	gluon-web-logging
+	# respondd-module-airtime \
 
 
 #	gluon-xlat464-clat    # route back from jool to clients does not exist,	(ipv4)-tcp connections break with this package when roaming
