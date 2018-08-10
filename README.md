@@ -70,4 +70,4 @@ Verify a successful upgrade by
 Changelog
 ---------
 
-We excluded the [CHANGELOG](CHANGELOG.md) into another file to prepare automation.
+The changelog can be found in [CHANGELOG.md](CHANGELOG.md).
