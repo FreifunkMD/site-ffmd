@@ -32,7 +32,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	haveged \
 	iptables \
-	iwinfo
+	iwinfo \
+	nodealert
 
 DEFAULT_GLUON_CHECKOUT := v2016.2.7
 
