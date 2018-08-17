@@ -11,6 +11,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-hostname \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
+	gluon-config-mode-mesh-vpn \
 	gluon-web-admin \
 	gluon-web-autoupdater \
 	gluon-web-wifi-config \
