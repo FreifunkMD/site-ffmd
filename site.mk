@@ -16,8 +16,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-autoupdater \
 	gluon-web-wifi-config \
 	gluon-web-network \
-	gluon-mesh-vpn-fastd \
-	gluon-web-mesh-vpn-fastd \
 	gluon-status-page \
 	gluon-iptables-clamp-mss-to-pmtu \
 	ffffm-banner \
@@ -32,8 +30,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-prefixd \
 	iptables \
 	nodealert \
+	gluon-mesh-vpn-wireguard \
 	gluon-web-logging
 	# respondd-module-airtime \
+#	gluon-mesh-vpn-fastd \
+#	gluon-web-mesh-vpn-fastd \
 
 
 #	gluon-xlat464-clat    # route back from jool to clients does not exist,	(ipv4)-tcp connections break with this package when roaming
