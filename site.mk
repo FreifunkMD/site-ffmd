@@ -30,8 +30,10 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-prefixd \
 	iptables \
 	nodealert \
-	gluon-web-mesh-vpn-wireguard \
 	gluon-mesh-vpn-wireguard
+
+#	gluon-web-mesh-vpn-wireguard
+
 	# respondd-module-airtime \
 #	gluon-mesh-vpn-fastd \
 #	gluon-web-mesh-vpn-fastd \
