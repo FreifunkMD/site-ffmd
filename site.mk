@@ -31,7 +31,10 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	haveged \
 	iptables \
-	iwinfo
+	iwinfo \
+	ffho-node-tuning \
+	ffho-autoupdater-wifi-fallback \
+	ffho-autoupdater-wifi-fallback-legacy
 
 DEFAULT_GLUON_CHECKOUT := v2016.2.7
 
