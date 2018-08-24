@@ -4,7 +4,8 @@ Changelog
 * 0.39: *gluon 2016.2.7*
   * Added [ffmd-packages](https://github.com/FreifunkMD/ffmd-packages) repository to the packages repository. This allows easy integration of custom packages.
   * Change MTU to 1312 with fastd on port 10001.
-  * Removed Registration of VPN keys. It is not longer nessesary to register the VPN keys.
+  * Removed Registration of VPN keys. It is not longer necessary to register the VPN keys.
+  * set vpn peer limit to 1 to reduce load on freifunk nodes.
 * 0.38: *gluon 2016.2.7*
   * see https://gluon.readthedocs.io/en/v2016.1.6/releases/v2016.1.6.html
   * see https://gluon.readthedocs.io/en/v2016.2/releases/v2016.2.html
