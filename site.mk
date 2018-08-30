@@ -28,6 +28,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	nodealert \
 	netcat \
+	gluon-web-mesh-vpn-wireguard \
 	gluon-mesh-vpn-wireguard
 
 #       kmod-nat46 \
