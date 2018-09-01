@@ -27,7 +27,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-prefixd \
 	iptables \
 	nodealert \
-	netcat \
 	gluon-web-mesh-vpn-wireguard \
 	gluon-mesh-vpn-wireguard
 
