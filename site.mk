@@ -12,6 +12,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info \
+	gluon-config-mode-notify \
 	gluon-config-mode-core \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-hostname \
@@ -31,7 +32,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	haveged \
 	iptables \
-	iwinfo
+	iwinfo \
+	nodealert
 
 DEFAULT_GLUON_CHECKOUT := v2016.2.7
 
