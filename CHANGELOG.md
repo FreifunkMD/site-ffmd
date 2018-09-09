@@ -8,6 +8,7 @@ Changelog
   * set vpn peer limit to 1 to reduce load on freifunk nodes.
   * Fix IPv6 address for gateway gw1
   * Include gluon-config-mode-notify and respondd-nodealert: Allow to set a timeout after which the node owner (based on contact data) should be notified when the node went offline.
+  * Add signing key for Christof Schulze
 * 0.38: *gluon 2016.2.7*
   * see https://gluon.readthedocs.io/en/v2016.1.6/releases/v2016.1.6.html
   * see https://gluon.readthedocs.io/en/v2016.2/releases/v2016.2.html
