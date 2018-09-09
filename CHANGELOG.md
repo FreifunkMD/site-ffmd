@@ -3,11 +3,12 @@ Changelog
 ---------
 * 0.39: *gluon 2016.2.7*
   * Added [ffmd-packages](https://github.com/FreifunkMD/ffmd-packages) repository to the packages repository. This allows easy integration of custom packages.
-  * Change MTU to 1312 with fastd on port 10001.
-  * Removed Registration of VPN keys. It is not longer necessary to register the VPN keys.
-  * set vpn peer limit to 1 to reduce load on freifunk nodes.
-  * Fix IPv6 address for gateway gw1
+  * Change MTU to 1312 with fastd on port 10001. This values still allows encapsulation in IPv6 and has been tested in other communities. With this change we hope to fix problems with IPv6 and KabelDeutschland. For further information see comments in [#50](https://github.com/FreifunkMD/site-ffmd/issues/50#issuecomment-412204836) and [#74](https://github.com/FreifunkMD/site-ffmd/pull/74#issuecomment-412209935).
+  * Set vpn peer limit to 1 to reduce load on freifunk nodes.
+  * Fix IPv6 address for gateway gw1.
+  * It is no longer necessary to register a node's VPN key to get an upstream connection.
   * Include gluon-config-mode-notify and respondd-nodealert: Allow to set a timeout after which the node owner (based on contact data) should be notified when the node went offline.
+  * Add signing key for Christof Schulze
 * 0.38: *gluon 2016.2.7*
   * see https://gluon.readthedocs.io/en/v2016.1.6/releases/v2016.1.6.html
   * see https://gluon.readthedocs.io/en/v2016.2/releases/v2016.2.html
