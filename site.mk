@@ -26,9 +26,10 @@ GLUON_SITE_PACKAGES := \
 	prefixd \
 	gluon-web-prefixd \
 	iptables \
-	nodealert \
 	gluon-web-mesh-vpn-wireguard \
 	gluon-mesh-vpn-wireguard
+
+#	nodealert \  # breaks respondd response from yanic?
 
 #       kmod-nat46 \
 #	ddhcpd \
