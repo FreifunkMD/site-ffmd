@@ -25,7 +25,6 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	prefixd \
 	gluon-web-prefixd \
-	iptables \
 	gluon-web-mesh-vpn-wireguard \
 	gluon-mesh-vpn-wireguard
 
