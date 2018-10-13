@@ -25,7 +25,6 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	prefixd \
 	gluon-web-prefixd \
-	gluon-web-mesh-vpn-wireguard \
 	gluon-mesh-vpn-wireguard
 
 #	nodealert \  # breaks respondd response from yanic?
