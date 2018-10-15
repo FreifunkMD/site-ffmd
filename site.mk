@@ -28,21 +28,13 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-wireguard
 
 #	nodealert \  # breaks respondd response from yanic?
-
 #       kmod-nat46 \
 #	ddhcpd \
 #	gluon-ddhcpd \
-
-#	gluon-web-mesh-vpn-wireguard
-
-	# respondd-module-airtime \
-#	gluon-mesh-vpn-fastd \
-#	gluon-web-mesh-vpn-fastd \
-
-
+#	respondd-module-airtime \
 #	gluon-xlat464-clat    # route back from jool to clients does not exist,	(ipv4)-tcp connections break with this package when roaming
 
-# ffffm-autoupdater-use-site-conf-branch \
+#	ffffm-autoupdater-use-site-conf-branch \
 
 include $(GLUON_SITEDIR)/specific_site.mk 
 
@@ -66,7 +58,7 @@ DEFAULT_GLUON_RELEASE := $(DEFAULT_GLUON_RELEASE)-$(shell date '+%Y.%m.%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Development branch information
-GLUON_BRANCH ?= babel_dev
+GLUON_BRANCH ?= experimental_babel
 
 # Default priority for updates.
 # GLUON_PRIORITY ?= 0
