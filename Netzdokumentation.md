@@ -43,6 +43,10 @@ Das [Dockerfile](https://github.com/FreifunkMD/wg-docker/)  integriert die folge
 * l3roamd
 * mmfd
 
+### babelgw1
+Das gateway hält einen gre-Tunnel zum batman-gw1 und jeweils ein statische 
+route für die IP-Adressen von 1.ntp.ffmd.
+
 ## Map
 ### meshviewer
 ### yanic
