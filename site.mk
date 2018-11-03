@@ -70,7 +70,7 @@ GLUON_LANGS ?= en de
 GLUON_REGION ?= eu
 
 # Prefer ath10k firmware with 802.11s support
-GLUON_ATH10K_MESH ?= 11s
+GLUON_WLAN_MESH ?= 11s
 
 # Multidomain support
 GLUON_MULTIDOMAIN=1
