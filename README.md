@@ -71,3 +71,8 @@ Changelog
 ---------
 
 The changelog can be found in [CHANGELOG.md](CHANGELOG.md).
+
+Contributing
+------------
+
+If you want to contribute, please have a look at our [contribution notes](CONTRIBUTING.md).
