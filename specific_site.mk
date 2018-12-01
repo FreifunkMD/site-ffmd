@@ -127,7 +127,7 @@ DEBUG_PACKAGES := \
 	kmod-cfg80211
 
 LARGEDEVICE_PACKAGES := \
-	wg-broker-server
+	# wg-broker-server
 
 # Main combination 
 MAIN_COMBO_PACKAGES := \
