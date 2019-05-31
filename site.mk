@@ -35,7 +35,8 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	nodealert
 
-DEFAULT_GLUON_CHECKOUT := v2016.2.7
+# Tag the current commit on v2016.2.x (2019-06-02)
+DEFAULT_GLUON_CHECKOUT := 35c9f9aecc5de53324ee61904faa1c5763d61134
 
 # Allow overriding the checkout from the command line
 GLUON_CHECKOUT ?= $(DEFAULT_GLUON_CHECKOUT)
