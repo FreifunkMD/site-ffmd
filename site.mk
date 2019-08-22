@@ -25,14 +25,12 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	prefixd \
 	gluon-web-prefixd \
+	gluon-xlat464-clat  \
+	gluon-ddhcpd \
 	gluon-mesh-vpn-wireguard
 
 #	nodealert \  # breaks respondd response from yanic?
-#       kmod-nat46 \
-#	ddhcpd \
-#	gluon-ddhcpd \
 #	respondd-module-airtime \
-#	gluon-xlat464-clat    # route back from jool to clients does not exist,	(ipv4)-tcp connections break with this package when roaming
 
 #	ffffm-autoupdater-use-site-conf-branch \
 
