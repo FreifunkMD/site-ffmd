@@ -72,3 +72,6 @@ GLUON_WLAN_MESH ?= 11s
 
 # Multidomain support
 GLUON_MULTIDOMAIN=1
+
+GLUON_DEPRECATED=full
+
