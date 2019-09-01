@@ -19,6 +19,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	gluon-iptables-clamp-mss-to-pmtu \
 	ffffm-banner \
+	ffffm-helper-tools \
 	ffffm-keep-radio-channel \
 	babeldev \
 	haveged \
