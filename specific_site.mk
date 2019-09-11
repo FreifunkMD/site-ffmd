@@ -142,7 +142,7 @@ MAIN_COMBO_PACKAGES := \
 
 # ar71xx-tiny
 ifeq ($(GLUON_TARGET),ar71xx-tiny)
-GLUON_SITE_PACKAGES +=
+GLUON_SITE_PACKAGES += zram-swap
 # Don't add aditional packages here. 
 # The ar71xx-tiny images require all free Flash memory space.
 endif
