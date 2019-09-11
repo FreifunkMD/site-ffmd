@@ -1,5 +1,0 @@
-#!/bin/bash
-[[ -f buildlog ]] && mv buildlog buildlog.last
-echo "showing only errors and warnings, writing stdout and stderr to buildlog"
-ionice -c 3 nice -n19 make GLUON_TARGET=ar71xx-generic V=s -j5  2>&1| tee buildlog|grep -i -E "(error|warning)"|grep -v strerror| grep -v error.c | grep -v error.o|grep -v Werror |grep -v "echo \"Warning"|grep -v error_|grep -v Wno-error= |grep -i --color -E "(error|warning)"
-echo build exited with exit code: $?
