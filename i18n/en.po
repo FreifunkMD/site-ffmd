@@ -20,8 +20,7 @@ msgstr ""
 
 msgid "gluon-config-mode:pubkey"
 msgstr ""
-"<p>This is your Freifunk node's public key. No further actions are required. The "
-"uplink is now set up.</p>"
+"<p>No further actions are required. The uplink is now set up.</p>"
 
 msgid "gluon-config-mode:reboot"
 msgstr ""

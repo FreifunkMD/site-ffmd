@@ -20,8 +20,8 @@ msgstr ""
 
 msgid "gluon-config-mode:pubkey"
 msgstr ""
-"<p>Dies ist der öffentliche Schlüssel Deines Freifunkknotens. Es sind keine weiteren "
-"Aktionen erforderlich. Der Uplink ist nun eingerichtet.</p>"
+"<p>Es sind keine weiteren Aktionen erforderlich. "
+"Der Uplink ist nun eingerichtet.</p>"
 
 msgid "gluon-config-mode:reboot"
 msgstr ""
