@@ -1,6 +1,10 @@
 
 Changelog
 ---------
+* 0.40: *gluon 2016.2.7-3-g35c9f9ae* aka *gluon 2016.2.x*
+  * Remove IP addresses from site.conf. Gateways are discovered via DNS.
+  * Add CONTRIBUTING.md to repository.
+  * Remove obsolete sentence about node registration.
 * 0.39: *gluon 2016.2.7*
   * Added [ffmd-packages](https://github.com/FreifunkMD/ffmd-packages) repository to the packages repository. This allows easy integration of custom packages.
   * Change MTU to 1312 with fastd on port 10001. This values still allows encapsulation in IPv6 and has been tested in other communities. With this change we hope to fix problems with IPv6 and KabelDeutschland. For further information see comments in [#50](https://github.com/FreifunkMD/site-ffmd/issues/50#issuecomment-412204836) and [#74](https://github.com/FreifunkMD/site-ffmd/pull/74#issuecomment-412209935).
