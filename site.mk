@@ -17,6 +17,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-wifi-config \
 	gluon-web-network \
 	gluon-status-page \
+	respondd-module-airtime \
 	gluon-iptables-clamp-mss-to-pmtu \
 	ffffm-banner \
 	ffffm-helper-tools \
