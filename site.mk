@@ -25,6 +25,7 @@ GLUON_SITE_PACKAGES := \
 	babeldev \
 	haveged \
 	iwinfo \
+	kmod-ipt-raw \
 	prefixd \
 	gluon-web-prefixd \
 	gluon-xlat464-clat  \
