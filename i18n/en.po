@@ -20,7 +20,7 @@ msgstr ""
 
 msgid "gluon-config-mode:reboot"
 msgstr ""
-"<p>The node is currently rebooting.<br />"
+"<p>The node is currently rebooting.</p>"
 "<p>To get back to this configuration interface, you have to press the reset button for "
 "10 seconds during normal operation. The device will then reboot into config "
 "mode.</p>"
