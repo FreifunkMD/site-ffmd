@@ -118,13 +118,13 @@ UTIL_PACKAGES := \
 DEBUG_PACKAGES := \
 	tcpdump \
 	libnl \
-	gdb \
-	valgrind \
 	iftop \
 	binutils \
 	strace \
 	screen \
 	kmod-cfg80211
+#	gdb \
+#	valgrind \
 
 LARGEDEVICE_PACKAGES := \
 	# wg-broker-server
