@@ -22,8 +22,7 @@ GLUON_SITE_PACKAGES := \
 	ffffm-banner \
 	ffffm-helper-tools \
 	ffffm-keep-radio-channel \
-	babeldev \
-	haveged \
+	babeld \
 	iwinfo \
 	kmod-ipt-raw \
 	prefixd \
