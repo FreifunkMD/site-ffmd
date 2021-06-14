@@ -1,6 +1,11 @@
 
 Changelog
 ---------
+* 0.41: *gluon 2021.1 *
+  * Updated the build process
+  * Changed and updated the included packages
+  * Changed the build process to be more consistent around other ff communities
+  * Created a Makefile
 * 0.40: *gluon 2016.2.7-3-g35c9f9ae* aka *gluon 2016.2.x*
   * Remove IP addresses from site.conf. Gateways are discovered via DNS.
   * Add CONTRIBUTING.md to repository.
