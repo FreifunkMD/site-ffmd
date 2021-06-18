@@ -81,7 +81,6 @@ GLUON_BRANCH ?= experimental_babel
 # Allow overriding from the command line.
 GLUON_PRIORITY ?= 0
 
-
 # Languages to include.
 # Allow overriding from the command line.
 GLUON_LANGS ?= en de
@@ -90,13 +89,9 @@ GLUON_LANGS ?= en de
 # Allow overriding from the command line.
 GLUON_REGION ?= eu
 
-# Prefer ath10k firmware with given mesh support (ibss or 11s).
-# Allow overriding from the command line.
-GLUON_WLAN_MESH ?= 11s
-
 # Build of image types.
 # Allow overriding from the command line.
-GLUON_DEPRECATED ?= full
+GLUON_DEPRECATED ?= upgrade
 
 # Enable multidomain support
 GLUON_MULTIDOMAIN = 1
