@@ -75,7 +75,8 @@ GLUON_RELEASE ?= $(HOMEBREW_GLUON_RELEASE)
 
 # Autoupdater default branch.
 # Allow overriding from the command line.
-GLUON_BRANCH ?= experimental_babel
+GLUON_AUTOUPDATER_BRANCH ?= experimental_babel
+GLUON_AUTOUPDATER_ENABLED ?= 1
 
 # Default priority for updates.
 # Allow overriding from the command line.
