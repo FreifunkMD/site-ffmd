@@ -24,7 +24,6 @@ GLUON_SITE_PACKAGES := \
 	kmod-ipt-raw \
 	prefixd \
 	gluon-web-prefixd \
-	gluon-464xlat-clat  \
 	gluon-ddhcpd \
 	gluon-mesh-vpn-wireguard
 
