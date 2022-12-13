@@ -19,6 +19,9 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	respondd-module-airtime \
 	gluon-iptables-clamp-mss-to-pmtu \
+	ffffm-banner \
+	ffffm-helper-tools \
+	ffffm-keep-radio-channel \
 	babeld \
 	iwinfo \
 	kmod-ipt-raw \

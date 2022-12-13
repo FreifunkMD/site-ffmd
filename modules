@@ -1,4 +1,4 @@
-GLUON_SITE_FEEDS='christfddhcp'
+GLUON_SITE_FEEDS='ffffmpackages christfddhcp'
 PACKAGES_FFFFMPACKAGES_REPO=https://github.com/freifunk-ffm/packages.git
 PACKAGES_FFFFMPACKAGES_COMMIT=2c8001ec76fb0d172375cdfd887a6530c5dd16ee
 PACKAGES_FFFFMPACKAGES_BRANCH=master
