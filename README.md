@@ -72,6 +72,11 @@ Changelog
 
 The changelog can be found in [CHANGELOG.md](CHANGELOG.md).
 
+License
+-------
+
+The firmware configuration is licensed under CC0 license, which can be found in [LICENSE](LICENSE).
+
 Contributing
 ------------
 
