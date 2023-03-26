@@ -1,6 +1,7 @@
 
 Changelog
 ---------
+  * Add CC0 LICENSE to repository.
 * 0.40: *gluon 2016.2.7-3-g35c9f9ae* aka *gluon 2016.2.x*
   * Remove IP addresses from site.conf. Gateways are discovered via DNS.
   * Add CONTRIBUTING.md to repository.
