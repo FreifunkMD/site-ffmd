@@ -1,0 +1,37 @@
+name: Build Firmware
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v*
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+env:
+  TARGETS: x86-64
+
+jobs:
+  build_firmware:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+
+        - name: Install Dependencies
+          run: sudo contrib/actions/install-dependencies.sh
+
+        - name: Build
+          run: contrib/actions/run-build.sh $TARGETS
+
+        - name: Archive build logs
+          if: ${{ !cancelled() }}
+          uses: actions/upload-artifact@v3
+          with:
+            name: $TARGETS_logs
+            path: openwrt/logs
+
+        - name: Archive build output
+          uses: actions/upload-artifact@v3
+          with:
+            name: $TARGETS_output
+            path: output
